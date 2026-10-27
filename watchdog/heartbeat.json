@@ -1,0 +1,11 @@
+{
+  "authorization_id": null,
+  "campaign_id": null,
+  "last_heartbeat_utc": "2026-10-27T16:27:21.874855Z",
+  "lease_generation": 0,
+  "mathematics_started": false,
+  "recovery_armed": false,
+  "run_id": null,
+  "schema_version": 1,
+  "status": "NO_CONFIRMED_CAMPAIGN"
+}

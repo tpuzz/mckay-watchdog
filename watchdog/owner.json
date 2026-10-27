@@ -1,0 +1,9 @@
+{
+  "authorization_id": null,
+  "campaign_id": null,
+  "generation": 0,
+  "lease_expires_utc": null,
+  "owner_run_id": null,
+  "schema_version": 1,
+  "status": "inactive"
+}

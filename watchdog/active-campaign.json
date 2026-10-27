@@ -1,0 +1,15 @@
+{
+  "authorization_id": null,
+  "authorization_sha256": null,
+  "campaign_id": null,
+  "checkpoint_id": null,
+  "checkpoint_sha256": null,
+  "mathematics_authorized": false,
+  "next_unfinished_action": null,
+  "schema_version": 1,
+  "setup_id": "mckay-fine-infra-20261027T162721Z",
+  "statement_sha256": null,
+  "statement_version": null,
+  "status": "NO_CONFIRMED_CAMPAIGN",
+  "updated_at_utc": "2026-10-27T16:27:21.874855Z"
+}
