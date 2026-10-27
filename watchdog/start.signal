@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "setup_id": "mckay-fine-infra-20261027T162721Z",
+  "signal": "NON_MATHEMATICAL_DEPLOYMENT_TEST",
+  "deployment_commit": "57f20a2bfc288cce486a06a11b7fe1c58e563153",
+  "expected_status": "NO_CONFIRMED_CAMPAIGN",
+  "mathematics_authorized": false
+}
