@@ -3,13 +3,14 @@
   "campaign_id": "mckay-fine-local-20261027T204434Z",
   "authorization_id": "mckay-fine-local-20261027T204434Z-authorization-v1",
   "generation": 2,
-  "status": "active",
+  "status": "released",
   "owner_run_id": "mckay-fine-local-20261027T204434Z-recovery-g2-20261027T2244Z",
   "acquired_at_utc": "2026-10-27T22:45:00Z",
-  "last_renewed_utc": "2026-10-27T22:45:45Z",
-  "lease_expires_utc": "2026-10-27T22:57:45Z",
+  "last_renewed_utc": "2026-10-27T22:50:30Z",
+  "lease_expires_utc": "2026-10-27T22:50:30Z",
+  "released_at_utc": "2026-10-27T22:50:30Z",
+  "release_reason": "VERIFIED_TERMINAL_DELIVERY",
   "input_generation": 1,
-  "input_checkpoint_id": "checkpoint-0012",
-  "recovery_reason": "COORDINATOR_EXECUTION_ENVIRONMENT_UNAVAILABLE",
-  "launch_intent_filename": "mckay-fine-local-20261027T204434Z--RECOVERY-LAUNCH-INTENT-g2.json"
+  "terminal_checkpoint_id": "checkpoint-0013",
+  "terminal_checkpoint_sha256": "d25f6d985a218dd0feed13acac110448e4968d17da9085a24d3c82b92f487a00"
 }
