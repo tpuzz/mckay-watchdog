@@ -1,11 +1,9 @@
 {
   "schema_version": 1,
-  "signal": "DIAGNOSTIC_FINISHED",
-  "diagnostic_id": "mckay-supervisor-e2e-20261027T201638Z",
-  "diagnostic_status": "SUPERVISOR_TO_WORK_TRANSPORT_AND_DUPLICATE_CHECK_PASSED",
-  "github_run_id": "40577514062",
-  "github_run_attempt": 2,
-  "pr_number": 2,
-  "work_execution_id": "506d7ed5-cc78-8324-9245-6996cec18f63",
-  "mathematics_authorized": false
+  "signal": "START_SUPERVISION",
+  "campaign_id": "mckay-fine-local-20261027T204434Z",
+  "run_id": "mckay-fine-local-20261027T204434Z-root-01",
+  "updated_at_utc": "2026-10-27T20:50:33.497Z",
+  "recovery_status": "UNARMED_NO_DEADLINE_ACK_VALIDATION",
+  "note": "Confirmed campaign metadata and private checkpoint bound; no supervisor code change."
 }
