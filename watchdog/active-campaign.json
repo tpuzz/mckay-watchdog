@@ -7,16 +7,16 @@
   "statement_version": "v1",
   "statement_sha256": "98320457e9aa22379360a214c05fc1846742d5de93b51d2e00ec102b7bfed569",
   "statement_filename": "mckay-fine-cofinal-20261027T232057Z--STATEMENT.md",
-  "checkpoint_id": "checkpoint-0001",
-  "checkpoint_sha256": "c93fb493b1c3c14c65b0dd8afae5b6a21212a17c04bb6973904e28fb469fe585",
-  "checkpoint_filename": "mckay-fine-cofinal-20261027T232057Z--CHECKPOINT-0001.zip",
+  "checkpoint_id": "checkpoint-0002",
+  "checkpoint_sha256": "658f54617746a56a9150e860958cf602162d571d62c737d3d08478c6570cc93a",
+  "checkpoint_filename": "mckay-fine-cofinal-20261027T232057Z--CHECKPOINT-0002.zip",
   "source_bundle_filename": "mckay-fine-cofinal-20261027T232057Z--SOURCES-v1.zip",
   "source_bundle_sha256": "310ade3f8ee3e7f77c02c4fdc6694ec1482acae6ed240d5f66c52f387a585a18",
   "hard_deadline_utc": null,
   "delivery_reserve_utc": null,
   "no_deadline_authorized": true,
   "mathematics_authorized": true,
-  "next_unfinished_action": "VERIFY_PRODUCTION_SUPERVISION",
+  "next_unfinished_action": "REFINEMENT_AND_CONSTRUCTION_W1",
   "status": "CONFIRMED",
-  "updated_at_utc": "2026-10-27T23:25:20Z"
+  "updated_at_utc": "2026-10-27T23:32:07Z"
 }
