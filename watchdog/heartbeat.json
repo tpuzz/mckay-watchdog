@@ -20,7 +20,7 @@
   "status": "running",
   "run_id": "mckay-fine-cofinal-20261027T232057Z-root-01",
   "lease_generation": 3,
-  "last_heartbeat_utc": "2026-10-27T23:37:10.729Z",
+  "last_heartbeat_utc": "2026-10-27T23:42:42.025Z",
   "mathematics_started": true,
   "recovery_armed": true,
   "recovery_status": "BOUNDED_PRODUCTION_SUPERVISION_OBSERVED",
@@ -45,5 +45,6 @@
   "supervisor_rearm_by_utc": "2026-10-28T05:18:54Z",
   "phase": "RESEARCH_STARTED",
   "actual_assignment_start_verified": true,
-  "research_start_filename": "mckay-fine-cofinal-20261027T232057Z--RESEARCH_STARTED-g3.json"
+  "research_start_filename": "mckay-fine-cofinal-20261027T232057Z--RESEARCH_STARTED-g3.json",
+  "research_start_sha256": "8414ad372d03646559612b83db589ac213f047a240e85bf3443daaf35bc8c168"
 }
