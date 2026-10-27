@@ -159,10 +159,27 @@ def startup_receipt_valid(old_hb, new_hb, new_owner):
             "event_execution_id", "assignment_id", "started_at_utc")):
         return False
     fields = ("campaign_id", "statement_version", "statement_sha256", "authorization_id",
-              "authorization_sha256", "hard_deadline_utc", "delivery_reserve_utc")
+              "authorization_sha256")
     for field in fields:
         value = old_hb.get(field)
         if not value or new_hb.get(field) != value or receipt.get(field) != value:
+            return False
+    # An explicit, privately verified no-deadline authorization is distinct
+    # from absent deadline fields. Keep timed authorizations exact-match.
+    clocks = ("hard_deadline_utc", "delivery_reserve_utc")
+    for field in clocks:
+        if any(field not in record for record in (old_hb, new_hb, receipt)):
+            return False
+        value = old_hb[field]
+        if new_hb[field] != value or receipt[field] != value:
+            return False
+        if value is not None and (not isinstance(value, str) or not value):
+            return False
+    if any(old_hb[field] is None for field in clocks):
+        if not all(old_hb[field] is None for field in clocks):
+            return False
+        if any(record.get("no_deadline_authorized") is not True
+               for record in (old_hb, new_hb, receipt)):
             return False
     if (receipt.get("input_checkpoint_id") != old_hb.get("checkpoint_id")
             or receipt.get("input_checkpoint_sha256") != old_hb.get("checkpoint_sha256")
@@ -563,4 +580,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
