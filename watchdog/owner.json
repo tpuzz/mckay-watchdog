@@ -1,16 +1,11 @@
 {
   "schema_version": 1,
-  "campaign_id": "mckay-fine-local-20261027T204434Z",
-  "authorization_id": "mckay-fine-local-20261027T204434Z-authorization-v1",
-  "generation": 2,
-  "status": "released",
-  "owner_run_id": "mckay-fine-local-20261027T204434Z-recovery-g2-20261027T2244Z",
-  "acquired_at_utc": "2026-10-27T22:45:00Z",
-  "last_renewed_utc": "2026-10-27T22:50:30Z",
-  "lease_expires_utc": "2026-10-27T22:50:30Z",
-  "released_at_utc": "2026-10-27T22:50:30Z",
-  "release_reason": "VERIFIED_TERMINAL_DELIVERY",
-  "input_generation": 1,
-  "terminal_checkpoint_id": "checkpoint-0013",
-  "terminal_checkpoint_sha256": "d25f6d985a218dd0feed13acac110448e4968d17da9085a24d3c82b92f487a00"
+  "campaign_id": "mckay-fine-cofinal-20261027T232057Z",
+  "authorization_id": "mckay-fine-cofinal-20261027T232057Z-authorization-v1",
+  "owner_run_id": "mckay-fine-cofinal-20261027T232057Z-root-01",
+  "generation": 3,
+  "status": "active",
+  "acquired_at_utc": "2026-10-27T23:25:20Z",
+  "last_renewed_utc": "2026-10-27T23:25:20Z",
+  "lease_expires_utc": "2026-10-27T23:37:20.000Z"
 }
