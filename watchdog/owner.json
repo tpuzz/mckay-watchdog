@@ -2,12 +2,10 @@
   "schema_version": 1,
   "campaign_id": "mckay-fine-cofinal-20261027T232057Z",
   "authorization_id": "mckay-fine-cofinal-20261027T232057Z-authorization-v1",
-  "owner_run_id": "mckay-fine-cofinal-20261027T232057Z-root-01",
-  "generation": 3,
-  "status": "released",
-  "acquired_at_utc": "2026-10-27T23:25:20Z",
-  "last_renewed_utc": "2026-10-27T23:42:42.025Z",
-  "lease_expires_utc": "2026-10-27T23:50:08.458Z",
-  "released_at_utc": "2026-10-27T23:50:08.458Z",
-  "release_reason": "COORDINATOR_TRANSPORT_DISCONNECTED_CHECKPOINT_PERSISTED"
+  "owner_run_id": "mckay-event-546609b0-d261-11f1-8d52-c47a6ce5db9b",
+  "generation": 4,
+  "status": "active",
+  "acquired_at_utc": "2026-10-27T23:53:10.247Z",
+  "last_renewed_utc": "2026-10-27T23:53:10.247Z",
+  "lease_expires_utc": "2026-10-28T00:05:10.247Z"
 }
