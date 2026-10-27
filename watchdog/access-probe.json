@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "setup_id": "mckay-fine-infra-20261027T162721Z",
+  "classification": "NON_MATHEMATICAL_ACCESS_PROBE",
+  "purpose": "Authorized infrastructure write/read-back test",
+  "mathematics_authorized": false
+}
