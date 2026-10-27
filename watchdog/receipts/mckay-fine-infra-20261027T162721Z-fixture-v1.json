@@ -1,0 +1,15 @@
+{
+  "fixture_id": "mckay-fine-infra-20261027T162721Z-fixture-v1",
+  "fixture_sha256": "7248d120d38df01009eac3b1542bf3d13ac273698be0aaedfef21693cb04d492",
+  "event_action": "opened",
+  "pr_number": 1,
+  "event_delivery_id": "bab2c650-d224-11f1-849f-e6bcf7f919f5",
+  "event_run_id": "mckay-event-bab2c650-d224-11f1-849f-e6bcf7f919f5",
+  "worker_id": "/root/fixture_check",
+  "generation": 1,
+  "lease_claim_verified": true,
+  "lease_release_verified": true,
+  "private_receipt_filename": "EVENT_TEST_RECEIPT--mckay-fine-infra-20261027T162721Z-fixture-v1--mckay-event-bab2c650-d224-11f1-849f-e6bcf7f919f5.json",
+  "private_receipt_sha256": "fa829a79e1398ee3e52b04f2a548f22713c17e9b0f94460f870a2b47783245a4",
+  "status": "EVENT_TEST_PASSED"
+}
