@@ -189,6 +189,57 @@ def startup_receipt_valid(old_hb, new_hb, new_owner):
             and receipt.get("generation") == new_owner.get("generation")
             and receipt.get("generation") == new_hb.get("lease_generation"))
 
+def record_supervision_observation(api, snapshot, decision, now):
+    """Observe the production binding; never substitute for a Work-start receipt."""
+    _, hb, owner = snapshot
+    pointer = hb.get("_active_pointer", {})
+    if (not pointer_valid(pointer, hb, owner)
+            or pointer.get("mathematics_authorized") is not True
+            or decision.action != "wait"
+            or decision.reason not in ("Unexpired owner", "Heartbeat is fresh")):
+        return None
+    campaign = campaign_id(hb, owner)
+    if not campaign or not re.fullmatch(r"[A-Za-z0-9_-]+", campaign):
+        return None
+    fields = BINDING_FIELDS + ("hard_deadline_utc", "delivery_reserve_utc",
+                              "no_deadline_authorized")
+    if any(key not in hb or key not in pointer or hb[key] != pointer[key]
+           for key in fields):
+        return None
+    if (hb["hard_deadline_utc"] is None or hb["delivery_reserve_utc"] is None):
+        if (hb["hard_deadline_utc"] is not None or hb["delivery_reserve_utc"] is not None
+                or hb["no_deadline_authorized"] is not True):
+            return None
+    record = {key: hb[key] for key in fields}
+    record.update(status="SUPERVISION_BINDING_OBSERVED", owner_run_id=owner["owner_run_id"],
+                  generation=owner["generation"], decision_reason=decision.reason,
+                  supervisor_run_id=os.environ.get("GITHUB_RUN_ID"),
+                  supervisor_commit=os.environ.get("GITHUB_SHA"),
+                  research_start_verified=False)
+    # These identify the actual deployed execution, not a local fixture.
+    if not record["supervisor_run_id"] or not record["supervisor_commit"]:
+        return None
+    path = "watchdog/receipts/%s-supervision-g%s.json" % (campaign, owner["generation"])
+    endpoint = "/contents/" + path
+    previous = None
+    try:
+        previous = api.request("GET", endpoint)
+    except APIError as error:
+        if error.status != 404:
+            raise
+    if previous:
+        old = json.loads(base64.b64decode(previous["content"]))
+        if all(old.get(key) == value for key, value in record.items()):
+            return path
+    record["observed_at_utc"] = now.isoformat()
+    payload = {"message": "Record bounded supervisor binding observation",
+               "content": base64.b64encode((json.dumps(record, indent=2)+"\n").encode()).decode()}
+    if previous:
+        payload["sha"] = previous["sha"]
+    api.request("PUT", endpoint, payload)
+    return path
+
+
 class APIError(RuntimeError):
     def __init__(self, status, message):
         super().__init__(message)
@@ -505,6 +556,7 @@ def main():
     failures, previous = 0, None
     stop_at = time.monotonic() + 355 * 60
     pending = None
+    observed_binding = None
     while time.monotonic() < stop_at:
         try:
             now = datetime.now(timezone.utc)
@@ -546,6 +598,11 @@ def main():
                 failures = 0
             else:
                 decision = decide(snapshot[1], snapshot[2], now)
+                binding = tuple(snapshot[1].get(key) for key in BINDING_FIELDS) + (
+                    snapshot[2].get("owner_run_id"), snapshot[2].get("generation"))
+                if not args.dry_run and binding != observed_binding:
+                    if record_supervision_observation(api, snapshot, decision, now):
+                        observed_binding = binding
                 if decision != previous:
                     print(json.dumps(decision.__dict__), flush=True)
                     previous = decision

@@ -1,9 +1,12 @@
 """No mathematical content: startup authorization/clock regression tests."""
 import copy
 import unittest
+import json
+import base64
+from unittest.mock import Mock, patch
 from datetime import timedelta
 import test_mckay
-from supervisor import startup_receipt_valid, recovery_acknowledged, decide
+from supervisor import startup_receipt_valid, recovery_acknowledged, decide, record_supervision_observation, APIError
 
 class ExplicitNoDeadlineTests(unittest.TestCase):
     def setUp(self):
@@ -98,6 +101,36 @@ class ExplicitNoDeadlineTests(unittest.TestCase):
         for status in ("running","checkpointed","interrupted","blocked"):
             self.old["status"]=status
             self.assertNotEqual(decide(self.old,self.owner,self.now).reason,"Unknown status")
+
+    def observation(self):
+        pointer=self.new["_active_pointer"]
+        pointer.update(mathematics_authorized=True,hard_deadline_utc=None,
+                       delivery_reserve_utc=None,no_deadline_authorized=True)
+        return ("snapshot-commit",self.new,self.new_owner)
+
+    def test_observation_is_bound_and_is_not_a_research_start(self):
+        snapshot=self.observation()
+        api=Mock()
+        api.request.side_effect=[APIError(404,"not present"),{}]
+        with patch.dict("os.environ",{"GITHUB_RUN_ID":"fixture-run","GITHUB_SHA":"fixture-sha"}):
+            path=record_supervision_observation(api,snapshot,decide(self.new,self.new_owner,self.now),self.now)
+        self.assertTrue(path.endswith("-supervision-g2.json"))
+        record=json.loads(base64.b64decode(api.request.call_args.args[2]["content"]))
+        self.assertEqual(record["checkpoint_sha256"],self.new["checkpoint_sha256"])
+        self.assertEqual(record["status"],"SUPERVISION_BINDING_OBSERVED")
+        self.assertFalse(record["research_start_verified"])
+
+    def test_invalid_binding_or_missing_execution_never_writes_observation(self):
+        snapshot=self.observation()
+        api=Mock()
+        self.new["checkpoint_sha256"]="bad"
+        with patch.dict("os.environ",{"GITHUB_RUN_ID":"fixture-run","GITHUB_SHA":"fixture-sha"}):
+            self.assertIsNone(record_supervision_observation(api,snapshot,decide(self.new,self.new_owner,self.now),self.now))
+        api.request.assert_not_called()
+        self.new["checkpoint_sha256"]=self.old["checkpoint_sha256"]
+        with patch.dict("os.environ",{},clear=True):
+            self.assertIsNone(record_supervision_observation(api,snapshot,decide(self.new,self.new_owner,self.now),self.now))
+        api.request.assert_not_called()
 
 if __name__=="__main__":
     unittest.main()
