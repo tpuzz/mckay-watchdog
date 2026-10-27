@@ -7,15 +7,15 @@
   "statement_version": "v1",
   "statement_sha256": "5d020aee911fd3720f5e26cd66809d691f123207b3a33cde44b791b8bbacb2c6",
   "statement_filename": "mckay-fine-local-20261027T204434Z--STATEMENT.md",
-  "checkpoint_id": "checkpoint-0008",
-  "checkpoint_sha256": "330baa49e6dad882dfe01768d2386304d22442d1d8fdc549be07a2f131da14ba",
-  "checkpoint_filename": "mckay-fine-local-20261027T204434Z--CHECKPOINT-0008.zip",
-  "next_unfinished_action": "REFUTATION_V1_HOSTILE_AUDIT",
-  "source_bundle_filename": "mckay-fine-local-20261027T204434Z--SOURCES-v2.zip",
-  "source_bundle_sha256": "6f0e8529165a31d2132b799076ea0e20ff8131bc69942584f0afd558c7a00e1a",
+  "checkpoint_id": "checkpoint-0009",
+  "checkpoint_sha256": "53df6042b1d8fff951372eab2cb0069601892a7988a40dd735fd6d9e7abd8706",
+  "checkpoint_filename": "mckay-fine-local-20261027T204434Z--CHECKPOINT-0009.zip",
+  "next_unfinished_action": "REFUTATION_V1_PROOF_BLIND_RECONSTRUCTION",
+  "source_bundle_filename": "mckay-fine-local-20261027T204434Z--SOURCES-v3.zip",
+  "source_bundle_sha256": "2dc7449e0cf59a972ec3371bd0b4fbb3a118053725ee5ca6548dd9de6d4875c7",
   "hard_deadline_utc": null,
   "delivery_reserve_utc": null,
   "mathematics_authorized": true,
   "status": "CONFIRMED",
-  "updated_at_utc": "2026-10-27T21:36:42.761Z"
+  "updated_at_utc": "2026-10-27T21:44:18.946Z"
 }
