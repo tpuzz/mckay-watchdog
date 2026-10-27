@@ -1,0 +1,25 @@
+name: McKay fine-product workflow watchdog
+on:
+  push:
+    branches: [main]
+    paths: ['watchdog/start.signal']
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: mckay-fine-workflow-supervisor
+  cancel-in-progress: true
+jobs:
+  supervise:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check recovery decisions
+        run: python -m unittest discover -s watchdog -p 'test_*.py' -v
+      - name: Supervise current McKay fine-product workflow
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python watchdog/supervisor.py
+
