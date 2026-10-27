@@ -1,10 +1,11 @@
 {
   "fixture_id": "mckay-fine-infra-20261027T162721Z-fixture-v1",
   "generation": 1,
-  "lease_expires_utc": "2026-10-27T16:51:17Z",
+  "lease_expires_utc": null,
   "owner_run_id": "mckay-event-bab2c650-d224-11f1-849f-e6bcf7f919f5",
   "schema_version": 1,
-  "status": "active",
+  "status": "released",
   "test_only": true,
-  "acquired_at": "2026-10-27T16:39:17Z"
+  "acquired_at": "2026-10-27T16:39:17Z",
+  "released_at": "2026-10-27T16:40:57Z"
 }
