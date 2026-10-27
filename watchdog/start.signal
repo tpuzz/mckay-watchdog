@@ -1,7 +1,8 @@
 {
   "schema_version": 1,
-  "signal": "NON_MATHEMATICAL_EVENT_PATH_TEST",
+  "signal": "DIAGNOSTIC_FINISHED",
   "diagnostic_id": "mckay-supervisor-e2e-20261027T201638Z",
-  "fixture_id": "mckay-fine-infra-20261027T162721Z-fixture-v1",
+  "diagnostic_status": "FAILED_GITHUB_ACTIONS_PR_CREATION_FORBIDDEN",
+  "github_run_id": "40577514062",
   "mathematics_authorized": false
 }
