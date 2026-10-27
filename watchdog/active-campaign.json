@@ -7,16 +7,16 @@
   "statement_version": "v1",
   "statement_sha256": "98320457e9aa22379360a214c05fc1846742d5de93b51d2e00ec102b7bfed569",
   "statement_filename": "mckay-fine-cofinal-20261027T232057Z--STATEMENT.md",
-  "checkpoint_id": "checkpoint-0002",
-  "checkpoint_sha256": "658f54617746a56a9150e860958cf602162d571d62c737d3d08478c6570cc93a",
-  "checkpoint_filename": "mckay-fine-cofinal-20261027T232057Z--CHECKPOINT-0002.zip",
+  "checkpoint_id": "checkpoint-0004",
+  "checkpoint_sha256": "b5e64fbaf857269a16d3774e7ab3b581b986a988530c9072a4f11191ee175af0",
+  "checkpoint_filename": "mckay-fine-cofinal-20261027T232057Z--CHECKPOINT-0004.zip",
   "source_bundle_filename": "mckay-fine-cofinal-20261027T232057Z--SOURCES-v1.zip",
   "source_bundle_sha256": "310ade3f8ee3e7f77c02c4fdc6694ec1482acae6ed240d5f66c52f387a585a18",
   "hard_deadline_utc": null,
   "delivery_reserve_utc": null,
   "no_deadline_authorized": true,
   "mathematics_authorized": true,
-  "next_unfinished_action": "REFINEMENT_AND_CONSTRUCTION_W1",
+  "next_unfinished_action": "RESUME_INTERRUPTED_ASSIGNMENTS_W1",
   "status": "CONFIRMED",
-  "updated_at_utc": "2026-10-27T23:32:07Z"
+  "updated_at_utc": "2026-10-27T23:48:27.104Z"
 }

@@ -7,20 +7,20 @@
   "statement_version": "v1",
   "statement_sha256": "98320457e9aa22379360a214c05fc1846742d5de93b51d2e00ec102b7bfed569",
   "statement_filename": "mckay-fine-cofinal-20261027T232057Z--STATEMENT.md",
-  "checkpoint_id": "checkpoint-0002",
-  "checkpoint_sha256": "658f54617746a56a9150e860958cf602162d571d62c737d3d08478c6570cc93a",
-  "checkpoint_filename": "mckay-fine-cofinal-20261027T232057Z--CHECKPOINT-0002.zip",
+  "checkpoint_id": "checkpoint-0004",
+  "checkpoint_sha256": "b5e64fbaf857269a16d3774e7ab3b581b986a988530c9072a4f11191ee175af0",
+  "checkpoint_filename": "mckay-fine-cofinal-20261027T232057Z--CHECKPOINT-0004.zip",
   "source_bundle_filename": "mckay-fine-cofinal-20261027T232057Z--SOURCES-v1.zip",
   "source_bundle_sha256": "310ade3f8ee3e7f77c02c4fdc6694ec1482acae6ed240d5f66c52f387a585a18",
   "hard_deadline_utc": null,
   "delivery_reserve_utc": null,
   "no_deadline_authorized": true,
   "mathematics_authorized": true,
-  "next_unfinished_action": "REFINEMENT_AND_CONSTRUCTION_W1",
-  "status": "running",
+  "next_unfinished_action": "RESUME_INTERRUPTED_ASSIGNMENTS_W1",
+  "status": "checkpointed",
   "run_id": "mckay-fine-cofinal-20261027T232057Z-root-01",
   "lease_generation": 3,
-  "last_heartbeat_utc": "2026-10-27T23:42:42.025Z",
+  "last_heartbeat_utc": "2026-10-27T23:48:27.104Z",
   "mathematics_started": true,
   "recovery_armed": true,
   "recovery_status": "BOUNDED_PRODUCTION_SUPERVISION_OBSERVED",
@@ -30,21 +30,24 @@
   "active_assignments": [
     {
       "assignment_id": "PERSIST-W1-v1",
-      "status": "running",
-      "started_at_utc": "2026-10-27T23:32:59.516035+00:00"
+      "status": "interrupted",
+      "automatic_replacements": 0
     },
     {
       "assignment_id": "CONSTRUCT-W1-v1",
-      "status": "running",
-      "started_at_utc": "2026-10-27T23:33:10.705722+00:00"
+      "status": "interrupted",
+      "automatic_replacements": 0
     }
   ],
   "bootstrap_filename": "mckay-fine-cofinal-20261027T232057Z--BOOTSTRAP-g3.json",
   "bootstrap_sha256": "226532a99685c55a727cfdf169d6203a6b1705814df685f426640c89c825779f",
   "supervisor_run_id": "40602413335",
   "supervisor_rearm_by_utc": "2026-10-28T05:18:54Z",
-  "phase": "RESEARCH_STARTED",
+  "phase": "INFRASTRUCTURE_STOP",
   "actual_assignment_start_verified": true,
   "research_start_filename": "mckay-fine-cofinal-20261027T232057Z--RESEARCH_STARTED-g3.json",
-  "research_start_sha256": "8414ad372d03646559612b83db589ac213f047a240e85bf3443daaf35bc8c168"
+  "research_start_sha256": "8414ad372d03646559612b83db589ac213f047a240e85bf3443daaf35bc8c168",
+  "execution_stopped": true,
+  "stop_reason": "COORDINATOR_TRANSPORT_DISCONNECTED",
+  "current_binding_observed": false
 }
