@@ -2,7 +2,10 @@
   "schema_version": 1,
   "signal": "DIAGNOSTIC_FINISHED",
   "diagnostic_id": "mckay-supervisor-e2e-20261027T201638Z",
-  "diagnostic_status": "FAILED_GITHUB_ACTIONS_PR_CREATION_FORBIDDEN",
+  "diagnostic_status": "SUPERVISOR_TO_WORK_TRANSPORT_AND_DUPLICATE_CHECK_PASSED",
   "github_run_id": "40577514062",
+  "github_run_attempt": 2,
+  "pr_number": 2,
+  "work_execution_id": "506d7ed5-cc78-8324-9245-6996cec18f63",
   "mathematics_authorized": false
 }
