@@ -1,9 +1,80 @@
 import copy
 from datetime import datetime, timedelta, timezone
 import unittest
-from unittest.mock import patch
+from unittest.mock import patch, Mock
 from supervisor import decide, recovery_acknowledged, incident_identity, GitHubAPI, main
 from event_policy import classify_event
+from supervisor import emit_diagnostic, TEST_FIXTURE_ID, TEST_FIXTURE_SHA256
+
+
+class DiagnosticTransportTests(unittest.TestCase):
+    def setUp(self):
+        self.identity = 'mckay-supervisor-e2e-unit-test'
+        self.snapshot = ('test-commit',
+            {'_active_pointer': {'status': 'NO_CONFIRMED_CAMPAIGN', 'mathematics_authorized': False},
+             'status': 'NO_CONFIRMED_CAMPAIGN', 'mathematics_started': False},
+            {'status': 'inactive', 'owner_run_id': None})
+        self.api = Mock(repo='tpuzz/mckay-watchdog')
+        self.api.snapshot.return_value = self.snapshot
+        self.receipt = {'fixture_id': TEST_FIXTURE_ID, 'fixture_sha256': TEST_FIXTURE_SHA256,
+                        'status': 'EVENT_TEST_PASSED', 'lease_release_verified': True}
+        self.calls = []
+        self.marker = None
+        self.api.file.side_effect = lambda path, ref: self.receipt if '/receipts/' in path else self.marker
+        self.api.request.side_effect = self.request
+
+    def request(self, method, endpoint, payload=None, **kwargs):
+        self.calls.append((method, endpoint, payload))
+        if method == 'GET' and endpoint.startswith('/pulls?'): return []
+        if method == 'GET' and endpoint.startswith('/git/ref/'): return None
+        if method == 'GET' and endpoint.startswith('/git/commits/'): return {'tree': {'sha': 'tree'}}
+        if method == 'POST' and endpoint == '/git/trees':
+            import json
+            self.marker = json.loads(payload['tree'][0]['content'])
+            return {'sha': 'new-tree'}
+        if method == 'POST' and endpoint == '/git/commits': return {'sha': 'new-commit'}
+        if method == 'POST' and endpoint == '/git/refs': return {}
+        if method == 'POST' and endpoint == '/pulls': return {'html_url': 'https://github.com/tpuzz/mckay-watchdog/pull/999', **payload}
+        raise AssertionError((method, endpoint))
+
+    def test_transport_emits_only_fixture_branch_and_test_pr(self):
+        result = emit_diagnostic(self.api, self.identity)
+        self.assertTrue(result['title'].startswith('MCKAY_FINE_RECOVERY_TEST NON-MATHEMATICAL '))
+        self.assertTrue(self.marker['test_only'])
+        self.assertFalse(self.marker['mathematics_authorized'])
+        self.assertEqual(self.marker['fixture_id'], TEST_FIXTURE_ID)
+        refs = [p for method, endpoint, p in self.calls if endpoint == '/git/refs']
+        self.assertEqual(refs[0]['ref'], 'refs/heads/watchdog-diagnostic-' + self.identity)
+        self.assertFalse(any('/contents/' in endpoint for _, endpoint, _ in self.calls))
+
+    def test_confirmed_production_blocks_test_before_mutation(self):
+        self.snapshot[1]['_active_pointer']['status'] = 'CONFIRMED'
+        with self.assertRaises(ValueError): emit_diagnostic(self.api, self.identity)
+        self.assertEqual(self.calls, [])
+
+    def test_missing_verified_receipt_blocks_test(self):
+        self.receipt['status'] = 'INCOMPLETE'
+        with self.assertRaises(ValueError): emit_diagnostic(self.api, self.identity)
+        self.assertEqual(self.calls, [])
+
+    def test_production_race_does_not_emit_pr(self):
+        changed = copy.deepcopy(self.snapshot)
+        changed[2]['owner_run_id'] = 'new-production-owner'
+        self.api.snapshot.side_effect = [self.snapshot, changed]
+        with self.assertRaises(ValueError): emit_diagnostic(self.api, self.identity)
+        self.assertFalse(any(method == 'POST' and endpoint == '/pulls' for method, endpoint, _ in self.calls))
+
+    def test_repeated_diagnostic_is_noop(self):
+        self.api.request.side_effect = None
+        self.api.request.return_value = [{'title': 'MCKAY_FINE_RECOVERY_TEST NON-MATHEMATICAL ' + self.identity,
+                                         'html_url': 'https://github.com/tpuzz/mckay-watchdog/pull/999'}]
+        emit_diagnostic(self.api, self.identity)
+        self.assertEqual(self.api.request.call_count, 1)
+        self.assertEqual(self.api.request.call_args.args[0], 'GET')
+
+    def test_invalid_identity_is_rejected_without_access(self):
+        with self.assertRaises(ValueError): emit_diagnostic(self.api, '../unsafe')
+        self.api.snapshot.assert_not_called()
 
 class McKaySafetyTests(unittest.TestCase):
     def setUp(self):

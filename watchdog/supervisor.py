@@ -22,6 +22,9 @@ CAMPAIGN_PREFIX = "mckay-fine-"
 TERMINAL_TITLE_PREFIX = "MCKAY_FINE_WORKFLOW_TERMINAL"
 RECOVERY_TITLE_PREFIX = "MCKAY_FINE_WORKFLOW_STALE"
 INFRA_TITLE_PREFIX = "MCKAY_FINE_INFRA_FAILURE"
+TEST_TITLE_PREFIX = "MCKAY_FINE_RECOVERY_TEST"
+TEST_FIXTURE_ID = "mckay-fine-infra-20261027T162721Z-fixture-v1"
+TEST_FIXTURE_SHA256 = "7248d120d38df01009eac3b1542bf3d13ac273698be0aaedfef21693cb04d492"
 STALE_SECONDS = 1200
 POLL_SECONDS = 60
 ACK_TIMEOUT_SECONDS = 360
@@ -396,10 +399,79 @@ def emit_infrastructure_failure(api, snapshot, attempts):
     print("Infrastructure-failure PR created/verified: " + pr["html_url"], flush=True)
 
 
+def diagnostic_state_valid(snapshot):
+    """A transport test is allowed only while production remains unconfirmed."""
+    _, hb, owner = snapshot
+    return (hb.get('_active_pointer', {}).get('status') == 'NO_CONFIRMED_CAMPAIGN'
+            and hb.get('_active_pointer', {}).get('mathematics_authorized') is False
+            and hb.get('status') == 'NO_CONFIRMED_CAMPAIGN'
+            and hb.get('mathematics_started') is False
+            and owner.get('status') in ('inactive', 'released')
+            and owner.get('owner_run_id') is None)
+
+
+def emit_diagnostic(api, diagnostic_id):
+    """Emit one fixture signal, never a production stale signal or research start."""
+    if not re.fullmatch(r'mckay-supervisor-e2e-[A-Za-z0-9-]{1,80}', diagnostic_id):
+        raise ValueError('Invalid diagnostic identity')
+    snapshot = api.snapshot()
+    if not diagnostic_state_valid(snapshot):
+        raise ValueError('Diagnostic requires unconfirmed, inactive production state')
+    receipt = api.file('watchdog/receipts/' + TEST_FIXTURE_ID + '.json', snapshot[0])
+    if (receipt.get('fixture_id') != TEST_FIXTURE_ID
+            or receipt.get('fixture_sha256') != TEST_FIXTURE_SHA256
+            or receipt.get('status') != 'EVENT_TEST_PASSED'
+            or receipt.get('lease_release_verified') is not True):
+        raise ValueError('Previously completed fixture receipt is required')
+    branch = 'watchdog-diagnostic-' + diagnostic_id
+    marker_path = 'watchdog/events/' + diagnostic_id + '.json'
+    title = TEST_TITLE_PREFIX + ' NON-MATHEMATICAL ' + diagnostic_id
+    query = urlencode({'state': 'all', 'head': api.repo.split('/')[0] + ':' + branch,
+                       'per_page': 100})
+    existing = api.request('GET', '/pulls?' + query)
+    if existing:
+        if existing[0].get('title') != title:
+            raise ValueError('Conflicting diagnostic PR')
+        print('Diagnostic signal already exists: ' + existing[0]['html_url'], flush=True)
+        return existing[0]
+    marker = {'diagnostic_id': diagnostic_id, 'fixture_id': TEST_FIXTURE_ID,
+              'fixture_sha256': TEST_FIXTURE_SHA256, 'test_only': True,
+              'mathematics_authorized': False, 'github_run_id': os.environ.get('GITHUB_RUN_ID')}
+    ref = api.request('GET', '/git/ref/heads/' + branch, missing_ok=True)
+    if ref is None:
+        commit = api.request('GET', '/git/commits/' + snapshot[0])
+        tree = api.request('POST', '/git/trees',
+                           {'base_tree': commit['tree']['sha'],
+                            'tree': [{'path': marker_path, 'mode': '100644', 'type': 'blob',
+                                      'content': json.dumps(marker, indent=2) + '\n'}]})
+        new_commit = api.request('POST', '/git/commits',
+                                {'message': 'McKay non-mathematical supervisor diagnostic',
+                                 'tree': tree['sha'], 'parents': [snapshot[0]]})
+        api.request('POST', '/git/refs',
+                    {'ref': 'refs/heads/' + branch, 'sha': new_commit['sha']})
+    saved = api.file(marker_path, branch)
+    if any(saved.get(k) != marker[k] for k in marker if k != 'github_run_id'):
+        raise ValueError('Conflicting diagnostic branch')
+    if not diagnostic_state_valid(api.snapshot()):
+        raise ValueError('Production state advanced; diagnostic PR not emitted')
+    pr = api.request('POST', '/pulls',
+                     {'title': title, 'head': branch, 'base': 'main',
+                      'body': ('NON-MATHEMATICAL supervisor transport diagnostic.\n\n'
+                               'Fixture ID: ' + TEST_FIXTURE_ID + '\n'
+                               'Fixture SHA-256: ' + TEST_FIXTURE_SHA256 + '\n'
+                               'Diagnostic ID: ' + diagnostic_id + '\n'
+                               'Existing completed fixture; duplicate handling is expected.\n'
+                               'No mathematical authorization or production ownership change.\n')})
+    print('Diagnostic PR emitted (Work result still unverified): ' + pr['html_url'], flush=True)
+    return pr
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--once", action="store_true", help="Evaluate once without waiting")
     parser.add_argument("--dry-run", action="store_true", help="Read/evaluate only; never mutate GitHub")
+    parser.add_argument('--diagnostic-event', metavar='ID',
+                        help='One non-mathematical fixture transport test; no production takeover')
     args = parser.parse_args()
     repo = os.environ["GITHUB_REPOSITORY"]
     if repo != "tpuzz/mckay-watchdog":
@@ -408,6 +480,11 @@ def main():
     metadata = api.request("GET", "")
     if metadata.get("full_name") != repo:
         raise ValueError("Repository must be the exact McKay repository")
+    if args.diagnostic_event:
+        if args.dry_run:
+            raise ValueError('Diagnostic emission cannot be combined with dry-run')
+        emit_diagnostic(api, args.diagnostic_event)
+        return
     failures, previous = 0, None
     stop_at = time.monotonic() + 355 * 60
     pending = None

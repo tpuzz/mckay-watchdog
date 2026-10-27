@@ -21,5 +21,15 @@ jobs:
       - name: Supervise current McKay fine-product workflow
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python watchdog/supervisor.py
+        run: |
+          python - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          signal_path = Path('watchdog/start.signal')
+          signal = json.loads(signal_path.read_text()) if signal_path.exists() else {}
+          command = ['python', 'watchdog/supervisor.py']
+          if os.environ['GITHUB_EVENT_NAME'] == 'push' and signal.get('signal') == 'NON_MATHEMATICAL_EVENT_PATH_TEST':
+              command += ['--diagnostic-event', signal['diagnostic_id']]
+          subprocess.run(command, check=True)
+          PY
 
