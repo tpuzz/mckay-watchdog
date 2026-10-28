@@ -20,7 +20,7 @@
   "status": "running",
   "run_id": "mckay-direct-resume-242588348eeb-g11",
   "lease_generation": 11,
-  "last_heartbeat_utc": "2026-10-28T14:08:56.255Z",
+  "last_heartbeat_utc": "2026-10-28T14:19:19.279Z",
   "mathematics_started": true,
   "recovery_armed": true,
   "recovery_status": "EXISTING_BOUNDED_SUPERVISOR_BINDING_OBSERVED",
