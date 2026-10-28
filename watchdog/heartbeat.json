@@ -20,10 +20,10 @@
   "status": "running",
   "run_id": "mckay-theorem38-root-20261028T100858Z",
   "lease_generation": 6,
-  "last_heartbeat_utc": "2026-10-28T10:21:54.384Z",
+  "last_heartbeat_utc": "2026-10-28T10:24:17.304Z",
   "mathematics_started": true,
-  "recovery_armed": false,
-  "recovery_status": "BOUND_AWAITING_SUPERVISOR_OBSERVATION",
+  "recovery_armed": true,
+  "recovery_status": "EXISTING_BOUNDED_SUPERVISOR_BINDING_OBSERVED",
   "resume_authorized": true,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
@@ -34,7 +34,7 @@
   "phase": "research_wave",
   "actual_assignment_start_verified": true,
   "execution_stopped": false,
-  "current_binding_observed": false,
+  "current_binding_observed": true,
   "execution_lease_released": false,
   "checkpoint_private_raw_readback_verified": true,
   "source_bytes_verified": true,
@@ -43,5 +43,8 @@
   "epoch": 1,
   "epoch_start_utc": "2026-10-28T10:08:58Z",
   "epoch_boundary_utc": "2026-10-28T11:08:58Z",
-  "campaign_complete": false
+  "campaign_complete": false,
+  "supervisor_run_id": "40671633835",
+  "supervisor_started_at_utc": "2026-10-28T10:22:42Z",
+  "supervisor_rearm_by_utc": "2026-10-28T16:12:42Z"
 }
