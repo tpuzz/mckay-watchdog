@@ -6,8 +6,8 @@
   "generation": 13,
   "status": "active",
   "acquired_at_utc": "2026-10-28T17:25:12.660Z",
-  "last_renewed_utc": "2026-10-28T17:25:12.660Z",
-  "lease_expires_utc": "2026-10-28T17:37:12.660Z",
+  "last_renewed_utc": "2026-10-28T17:27:17.358Z",
+  "lease_expires_utc": "2026-10-28T17:39:17.358Z",
   "previous_generation": 12,
   "recovery_reason": "six_hourly_backup_exact_A_W2_replacement"
 }
