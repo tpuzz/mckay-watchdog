@@ -7,20 +7,20 @@
   "statement_version": "v1",
   "statement_sha256": "1e09ed5cfc57122586a78836ed4496fbc47e19233bd45e0691d9aa936ce2becd",
   "statement_filename": "mckay-theorem38-truth-20261028T100858Z--STATEMENT.md",
-  "checkpoint_id": "checkpoint-0005",
-  "checkpoint_sha256": "38e9818384ce26c54cd20876190b60bc5200478bb928a1fed0db74dfc38240dd",
-  "checkpoint_filename": "mckay-theorem38-truth-20261028T100858Z--CHECKPOINT-0005.zip",
+  "checkpoint_id": "event-checkpoint-g10-01",
+  "checkpoint_sha256": "39bffdabd769bdeee22faaad6a80b8a6304182abbef25f41335c3ba2c9c79f09",
+  "checkpoint_filename": "mckay-theorem38-truth-20261028T100858Z--EVENT-CHECKPOINT-g10-01.zip",
   "source_bundle_filename": "mckay-theorem38-truth-20261028T100858Z--SOURCES-v1.zip",
   "source_bundle_sha256": "d2e5189c172db2b12a6ac3f9d4b4ae0c0d4543295428e9754593972e35a69d80",
   "hard_deadline_utc": null,
   "delivery_reserve_utc": null,
   "no_deadline_authorized": true,
   "mathematics_authorized": true,
-  "next_unfinished_action": "SOURCE_RECONCILIATION",
+  "next_unfinished_action": "RECONCILE_CANDIDATE_REVISION",
   "status": "running",
   "run_id": "mckay-event-23dd6f50-d2c9-11f1-8bb5-287cf6c18603",
   "lease_generation": 10,
-  "last_heartbeat_utc": "2026-10-28T12:18:24.069Z",
+  "last_heartbeat_utc": "2026-10-28T12:26:14.838Z",
   "mathematics_started": true,
   "recovery_armed": true,
   "recovery_status": "EXISTING_BOUNDED_SUPERVISOR_BINDING_OBSERVED",
@@ -28,9 +28,9 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "active_assignments": [
-    "source-convention-g10"
+    "candidate-revision-g10"
   ],
-  "phase": "SOURCE_RECONCILIATION",
+  "phase": "CANDIDATE_REVISION",
   "actual_assignment_start_verified": true,
   "execution_stopped": false,
   "current_binding_observed": true,
@@ -54,5 +54,6 @@
   "lease_release_readback_verified": false,
   "new_mathematical_epoch_started": false,
   "lease_released": false,
-  "interruption_delivery_prepared": false
+  "interruption_delivery_prepared": false,
+  "bootstrap_sha256": "f8dfec6bc82c01b6e445e56e116153e0c774e5c955d35f6af356cbbee89c7c6e"
 }
