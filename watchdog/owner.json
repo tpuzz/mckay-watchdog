@@ -4,10 +4,12 @@
   "authorization_id": "mckay-theorem38-truth-20261028T100858Z-authorization-v1",
   "owner_run_id": "mckay-event-27e40ad0-d2c6-11f1-8cab-1fc021414137",
   "generation": 8,
-  "status": "active",
+  "status": "released",
   "acquired_at_utc": "2026-10-28T11:55:44.715Z",
   "last_renewed_utc": "2026-10-28T11:55:44.715Z",
-  "lease_expires_utc": "2026-10-28T12:07:44.715Z",
+  "lease_expires_utc": "2026-10-28T12:01:39.078Z",
   "previous_generation": 7,
-  "recovery_reason": "opened_event_verified"
+  "recovery_reason": "opened_event_verified",
+  "released_at_utc": "2026-10-28T12:01:39.078Z",
+  "release_reason": "inherited_epoch_boundary"
 }
