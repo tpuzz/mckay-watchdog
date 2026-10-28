@@ -4,8 +4,10 @@
   "authorization_id": "mckay-fine-cofinal-20261027T232057Z-authorization-v1",
   "owner_run_id": "mckay-event-546609b0-d261-11f1-8d52-c47a6ce5db9b",
   "generation": 4,
-  "status": "active",
+  "status": "released",
   "acquired_at_utc": "2026-10-27T23:53:10.247Z",
   "last_renewed_utc": "2026-10-28T00:12:35.962Z",
-  "lease_expires_utc": "2026-10-28T00:24:35.962Z"
+  "lease_expires_utc": "2026-10-28T00:20:09.663Z",
+  "released_at_utc": "2026-10-28T00:20:09.663Z",
+  "release_reason": "VERIFIED_EPOCH_CHECKPOINT_0008"
 }
