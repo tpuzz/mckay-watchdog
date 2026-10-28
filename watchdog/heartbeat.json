@@ -20,7 +20,7 @@
   "status": "running",
   "run_id": "mckay-theorem38-root-20261028T100858Z",
   "lease_generation": 6,
-  "last_heartbeat_utc": "2026-10-28T10:24:17.304Z",
+  "last_heartbeat_utc": "2026-10-28T10:31:33.536Z",
   "mathematics_started": true,
   "recovery_armed": true,
   "recovery_status": "EXISTING_BOUNDED_SUPERVISOR_BINDING_OBSERVED",
@@ -28,8 +28,8 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "active_assignments": [
-    "assignment-1",
-    "assignment-2"
+    "A-W1",
+    "B-W1"
   ],
   "phase": "research_wave",
   "actual_assignment_start_verified": true,
