@@ -2,12 +2,12 @@
   "schema_version": 1,
   "campaign_id": "mckay-theorem38-truth-20261028T100858Z",
   "authorization_id": "mckay-theorem38-truth-20261028T100858Z-authorization-v1",
-  "owner_run_id": "mckay-direct-resume-3f8959ab2974-g14",
-  "generation": 14,
+  "owner_run_id": "mckay-direct-resume-3f8959ab2974-g15",
+  "generation": 15,
+  "previous_generation": 14,
   "status": "active",
-  "acquired_at_utc": "2026-10-28T20:56:15.146Z",
-  "last_renewed_utc": "2026-10-28T21:49:17.493Z",
-  "lease_expires_utc": "2026-10-28T22:01:17.493Z",
-  "previous_generation": 13,
-  "recovery_reason": "user_direct_resume_exact_frontier"
+  "acquired_at_utc": "2026-10-28T22:34:03.373Z",
+  "last_renewed_utc": "2026-10-28T22:34:03.373Z",
+  "lease_expires_utc": "2026-10-28T22:46:03.373Z",
+  "recovery_reason": "user_authorized_direct_resume"
 }
