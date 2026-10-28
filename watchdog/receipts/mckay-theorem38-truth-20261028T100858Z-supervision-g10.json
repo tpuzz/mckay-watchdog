@@ -4,12 +4,12 @@
   "statement_sha256": "1e09ed5cfc57122586a78836ed4496fbc47e19233bd45e0691d9aa936ce2becd",
   "authorization_id": "mckay-theorem38-truth-20261028T100858Z-authorization-v1",
   "authorization_sha256": "aefbf8992073c63ceb98ed509f6d3cf71691ad6587c68f008bfc83473bc8043c",
-  "checkpoint_id": "event-checkpoint-g10-03",
-  "checkpoint_sha256": "e0ff66040fbab8af6c164af7436cac9bcf7016b20f2e849c0bf6bae725ec4933",
-  "checkpoint_filename": "mckay-theorem38-truth-20261028T100858Z--EVENT-CHECKPOINT-g10-03.zip",
+  "checkpoint_id": "event-checkpoint-g10-04",
+  "checkpoint_sha256": "309d2db8afcb2a4b03c2b540cb9aa27ca5a5076f1f4b6e02d767a6b52d7867a4",
+  "checkpoint_filename": "mckay-theorem38-truth-20261028T100858Z--EVENT-CHECKPOINT-g10-04.zip",
   "authorization_filename": "mckay-theorem38-truth-20261028T100858Z--AUTHORIZATION.json",
   "statement_filename": "mckay-theorem38-truth-20261028T100858Z--STATEMENT.md",
-  "next_unfinished_action": "HOSTILE_AUDIT_V2",
+  "next_unfinished_action": "PROOF_BLIND_RECONSTRUCTION_V2",
   "hard_deadline_utc": null,
   "delivery_reserve_utc": null,
   "no_deadline_authorized": true,
@@ -20,5 +20,5 @@
   "supervisor_run_id": "40671633835",
   "supervisor_commit": "7871f2ce542d5189f46c68f3e2af9a7d8d5236df",
   "research_start_verified": false,
-  "observed_at_utc": "2026-10-28T12:34:54.451273+00:00"
+  "observed_at_utc": "2026-10-28T12:55:11.749666+00:00"
 }
