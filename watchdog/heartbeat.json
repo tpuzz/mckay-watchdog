@@ -20,14 +20,16 @@
   "status": "running",
   "run_id": "mckay-event-23dd6f50-d2c9-11f1-8bb5-287cf6c18603",
   "lease_generation": 10,
-  "last_heartbeat_utc": "2026-10-28T12:34:05.760Z",
+  "last_heartbeat_utc": "2026-10-28T12:35:10.274Z",
   "mathematics_started": true,
   "recovery_armed": true,
   "recovery_status": "EXISTING_BOUNDED_SUPERVISOR_BINDING_OBSERVED",
   "resume_authorized": true,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
-  "active_assignments": [],
+  "active_assignments": [
+    "hostile-audit-v2-g10"
+  ],
   "phase": "VERIFICATION",
   "actual_assignment_start_verified": true,
   "execution_stopped": false,
