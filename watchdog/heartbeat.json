@@ -7,20 +7,20 @@
   "statement_version": "v1",
   "statement_sha256": "1e09ed5cfc57122586a78836ed4496fbc47e19233bd45e0691d9aa936ce2becd",
   "statement_filename": "mckay-theorem38-truth-20261028T100858Z--STATEMENT.md",
-  "checkpoint_id": "resume-g11-02",
-  "checkpoint_sha256": "57faca40431ac776c5bb6c8b42f28a31593f5bd8d8eabe165349bcd78dc45237",
-  "checkpoint_filename": "mckay-theorem38-truth-20261028T100858Z--RESUME-g11-02.zip",
+  "checkpoint_id": "resume-g11-04",
+  "checkpoint_sha256": "3bcbf287e290faf248584e1d15048f3b444f8bacde25d4a7b9a05752ea20ae01",
+  "checkpoint_filename": "mckay-theorem38-truth-20261028T100858Z--RESUME-g11-04.zip",
   "source_bundle_filename": "mckay-theorem38-truth-20261028T100858Z--SOURCES-v1.zip",
   "source_bundle_sha256": "d2e5189c172db2b12a6ac3f9d4b4ae0c0d4543295428e9754593972e35a69d80",
   "hard_deadline_utc": null,
   "delivery_reserve_utc": null,
   "no_deadline_authorized": true,
   "mathematics_authorized": true,
-  "next_unfinished_action": "FRESH_LEAKAGE_CHECK",
+  "next_unfinished_action": "FRESH_HOSTILE_AUDIT",
   "status": "running",
   "run_id": "mckay-direct-resume-242588348eeb-g11",
   "lease_generation": 11,
-  "last_heartbeat_utc": "2026-10-28T14:44:20.451Z",
+  "last_heartbeat_utc": "2026-10-28T14:53:49.723Z",
   "mathematics_started": true,
   "recovery_armed": true,
   "recovery_status": "EXISTING_BOUNDED_SUPERVISOR_BINDING_OBSERVED",
@@ -29,8 +29,8 @@
   "dropbox_final_status_verified": true,
   "active_assignments": [
     {
-      "assignment_id": "verification-g11-02",
-      "role": "leakage",
+      "assignment_id": "verification-g11-04",
+      "role": "hostile audit",
       "state": "running"
     },
     {
@@ -39,7 +39,7 @@
       "state": "running"
     }
   ],
-  "phase": "LEAKAGE",
+  "phase": "HOSTILE_AUDIT",
   "actual_assignment_start_verified": true,
   "execution_stopped": false,
   "current_binding_observed": true,
