@@ -7,16 +7,16 @@
   "statement_version": "v1",
   "statement_sha256": "98320457e9aa22379360a214c05fc1846742d5de93b51d2e00ec102b7bfed569",
   "statement_filename": "mckay-fine-cofinal-20261027T232057Z--STATEMENT.md",
-  "checkpoint_id": "checkpoint-0017",
-  "checkpoint_sha256": "bd7c26379da2c888f0e16dbda4f9f2aacb742742f97d0d32fd4928768b469009",
-  "checkpoint_filename": "mckay-fine-cofinal-20261027T232057Z--CHECKPOINT-0017.zip",
+  "checkpoint_id": "checkpoint-0018",
+  "checkpoint_sha256": "542ecc4facb5b627bf3e704660e95c6c75197a3049266c023a3aa69593624374",
+  "checkpoint_filename": "mckay-fine-cofinal-20261027T232057Z--CHECKPOINT-0018.zip",
   "source_bundle_filename": "mckay-fine-cofinal-20261027T232057Z--SOURCES-v1.zip",
   "source_bundle_sha256": "310ade3f8ee3e7f77c02c4fdc6694ec1482acae6ed240d5f66c52f387a585a18",
   "hard_deadline_utc": null,
   "delivery_reserve_utc": null,
   "no_deadline_authorized": true,
   "mathematics_authorized": true,
-  "next_unfinished_action": "COMPARE_COHOMOLOGICAL_PERSISTENCE_V1",
+  "next_unfinished_action": "FINALIZE_VISIBLE_DELIVERY",
   "status": "CONFIRMED",
-  "updated_at_utc": "2026-10-28T09:08:19.825Z"
+  "updated_at_utc": "2026-10-28T09:23:34.505Z"
 }
