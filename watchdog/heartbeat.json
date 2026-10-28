@@ -20,12 +20,12 @@
   "status": "paused",
   "run_id": "mckay-direct-resume-242588348eeb-g11",
   "lease_generation": 11,
-  "last_heartbeat_utc": "2026-10-28T15:40:38.167Z",
+  "last_heartbeat_utc": "2026-10-28T15:44:56.308Z",
   "mathematics_started": true,
   "recovery_armed": true,
   "recovery_status": "ENVIRONMENT_STOP_RESUMABLE",
   "resume_authorized": true,
-  "terminal_delivery_complete": false,
+  "terminal_delivery_complete": true,
   "dropbox_final_status_verified": true,
   "active_assignments": [],
   "phase": "CHECKPOINTED_STOPPED",
@@ -57,5 +57,7 @@
   "ownership_readback_verified": true,
   "campaign_status": "INCOMPLETE",
   "execution_stop_reason": "COORDINATOR_ENVIRONMENT_UNAVAILABLE",
-  "epoch_end_utc": "2026-10-28T15:38:41.655Z"
+  "epoch_end_utc": "2026-10-28T15:38:41.655Z",
+  "terminal_delivery_committed_at_utc": "2026-10-28T15:44:56.308Z",
+  "terminal_delivery_location": "active_user_conversation"
 }
