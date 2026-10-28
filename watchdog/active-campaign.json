@@ -7,9 +7,9 @@
   "statement_version": "v1",
   "statement_sha256": "98320457e9aa22379360a214c05fc1846742d5de93b51d2e00ec102b7bfed569",
   "statement_filename": "mckay-fine-cofinal-20261027T232057Z--STATEMENT.md",
-  "checkpoint_id": "checkpoint-0014",
-  "checkpoint_sha256": "eac2f46215ca8bb10187fdda0fabdd2b7fea63d9c2ea86b5c6a251e8134a7c9c",
-  "checkpoint_filename": "mckay-fine-cofinal-20261027T232057Z--CHECKPOINT-0014.zip",
+  "checkpoint_id": "checkpoint-0016",
+  "checkpoint_sha256": "417e54c46b30d4d3077d2f0b10b1717f87bfb1e74c75ea2cfed28509f6083ccf",
+  "checkpoint_filename": "mckay-fine-cofinal-20261027T232057Z--CHECKPOINT-0016.zip",
   "source_bundle_filename": "mckay-fine-cofinal-20261027T232057Z--SOURCES-v1.zip",
   "source_bundle_sha256": "310ade3f8ee3e7f77c02c4fdc6694ec1482acae6ed240d5f66c52f387a585a18",
   "hard_deadline_utc": null,
@@ -18,5 +18,5 @@
   "mathematics_authorized": true,
   "next_unfinished_action": "BLIND_COHOMOLOGICAL_PERSISTENCE_V1",
   "status": "CONFIRMED",
-  "updated_at_utc": "2026-10-28T08:39:40.653Z"
+  "updated_at_utc": "2026-10-28T08:51:37.955Z"
 }
