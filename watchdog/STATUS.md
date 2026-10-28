@@ -1,19 +1,19 @@
 # McKay workflow status
 
-_Generated from public watchdog coordination state at 2026-10-28T14:44:22.353856Z._
+_Generated from public watchdog coordination state at 2026-10-28T14:44:30.261259Z._
 
 | Field | Status |
 | --- | --- |
 | Campaign | mckay-theorem38-truth-20261028T100858Z |
 | Execution | Active |
-| Current gate | Comparison |
-| Next gate | Comparison |
-| Checkpoint | resume-g11-01 |
+| Current gate | Leakage check |
+| Next gate | Leakage check |
+| Checkpoint | resume-g11-02 |
 | Generation | 11 |
 | Lease | Active |
-| Active assignments | 1 |
+| Active assignments | 2 |
 | Recovery | Armed |
-| Last heartbeat (UTC) | 2026-10-28T14:26:09.103Z |
+| Last heartbeat (UTC) | 2026-10-28T14:44:20.451Z |
 | Lease expires (UTC) | 2026-10-28T14:56:04.302Z |
 | Terminal delivery complete | No |
 
