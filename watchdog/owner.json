@@ -4,8 +4,10 @@
   "authorization_id": "mckay-theorem38-truth-20261028T100858Z-authorization-v1",
   "owner_run_id": "mckay-theorem38-root-20261028T100858Z",
   "generation": 6,
-  "status": "active",
+  "status": "released",
   "acquired_at_utc": "2026-10-28T10:20:05.318Z",
   "last_renewed_utc": "2026-10-28T10:59:23.443Z",
-  "lease_expires_utc": "2026-10-28T11:11:23.443Z"
+  "lease_expires_utc": "2026-10-28T11:11:23.364Z",
+  "released_at_utc": "2026-10-28T11:11:23.364Z",
+  "release_reason": "environment_unavailable"
 }
