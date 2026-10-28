@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "signal": "VERIFY_PRODUCTION_BINDING_OBSERVATION",
+  "signal": "RESUME_EXISTING_CAMPAIGN",
   "campaign_id": "mckay-theorem38-truth-20261028T100858Z",
   "authorization_id": "mckay-theorem38-truth-20261028T100858Z-authorization-v1",
-  "checkpoint_id": "checkpoint-0001",
-  "checkpoint_sha256": "689e8c5bb20186bafb24e5a4c3a3e4aceadf565432acdd0e46f6e5196e5a275d",
-  "requested_at_utc": "2026-10-28T10:22:33.491Z"
+  "checkpoint_id": "resume-g11-06",
+  "checkpoint_sha256": "c3ec125c3810d010f41bf6cf08163229c2b13aef173d29b2e741d23c9f7fbf56",
+  "requested_action": "verify_private_authorization_and_resume_same_campaign"
 }
