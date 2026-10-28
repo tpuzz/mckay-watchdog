@@ -4,8 +4,9 @@
   "authorization_id": "mckay-fine-cofinal-20261027T232057Z-authorization-v1",
   "owner_run_id": "mckay-event-20450d80-d2a1-11f1-807f-bafad5ad3eba",
   "generation": 5,
-  "status": "active",
+  "status": "released",
   "acquired_at_utc": "2026-10-28T07:30:14.375Z",
   "last_renewed_utc": "2026-10-28T09:23:22.175Z",
-  "lease_expires_utc": "2026-10-28T09:35:22.175Z"
+  "lease_expires_utc": "2026-10-28T09:24:52.380Z",
+  "released_at_utc": "2026-10-28T09:24:52.380Z"
 }
