@@ -4,12 +4,12 @@
   "statement_sha256": "98320457e9aa22379360a214c05fc1846742d5de93b51d2e00ec102b7bfed569",
   "authorization_id": "mckay-fine-cofinal-20261027T232057Z-authorization-v1",
   "authorization_sha256": "38e55bd35f4ca059589f8d00800418ad975da53354f9d07f1bd8c3669c6c1fba",
-  "checkpoint_id": "checkpoint-0004",
-  "checkpoint_sha256": "b5e64fbaf857269a16d3774e7ab3b581b986a988530c9072a4f11191ee175af0",
-  "checkpoint_filename": "mckay-fine-cofinal-20261027T232057Z--CHECKPOINT-0004.zip",
+  "checkpoint_id": "checkpoint-0005",
+  "checkpoint_sha256": "e31eda0255ba02830ba83f2ed1c1675cb20619e0af4095eebdbaac2bd0a7167e",
+  "checkpoint_filename": "mckay-fine-cofinal-20261027T232057Z--CHECKPOINT-0005.zip",
   "authorization_filename": "mckay-fine-cofinal-20261027T232057Z--AUTHORIZATION.json",
   "statement_filename": "mckay-fine-cofinal-20261027T232057Z--STATEMENT.md",
-  "next_unfinished_action": "RESUME_INTERRUPTED_ASSIGNMENTS_W1",
+  "next_unfinished_action": "COMPLETE_PERSIST_W1_V1",
   "hard_deadline_utc": null,
   "delivery_reserve_utc": null,
   "no_deadline_authorized": true,
@@ -20,5 +20,5 @@
   "supervisor_run_id": "40602413335",
   "supervisor_commit": "b55181bfe48d1e2e456e4ea4d503d4ed68a963ba",
   "research_start_verified": false,
-  "observed_at_utc": "2026-10-27T23:54:32.880922+00:00"
+  "observed_at_utc": "2026-10-28T00:00:42.035528+00:00"
 }
