@@ -38,7 +38,7 @@
   "research_start_sha256": "8e03253993140b14e1f6c343cf6587dab3c48825465555f70077507ef21e50c9",
   "execution_stopped": true,
   "current_binding_observed": true,
-  "execution_lease_released": false,
+  "execution_lease_released": true,
   "checkpoint_private_raw_readback_verified": true,
   "work_event_takeover_observed": true,
   "stop_reason": "ONE_HOUR_EPOCH_BOUNDARY",
