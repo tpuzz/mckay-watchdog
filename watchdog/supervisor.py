@@ -19,6 +19,7 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 CAMPAIGN_PREFIX = "mckay-fine-"
+EXACT_CAMPAIGN_IDS = frozenset({"mckay-theorem38-truth-20261028T100858Z"})
 TERMINAL_TITLE_PREFIX = "MCKAY_FINE_WORKFLOW_TERMINAL"
 RECOVERY_TITLE_PREFIX = "MCKAY_FINE_WORKFLOW_STALE"
 INFRA_TITLE_PREFIX = "MCKAY_FINE_INFRA_FAILURE"
@@ -48,7 +49,7 @@ def campaign_id(hb, owner):
     o_campaign = owner.get("campaign_id")
     if not isinstance(h_campaign, str) or h_campaign != o_campaign:
         return None
-    if not h_campaign.startswith(CAMPAIGN_PREFIX):
+    if not (h_campaign.startswith(CAMPAIGN_PREFIX) or h_campaign in EXACT_CAMPAIGN_IDS):
         return None
     return h_campaign
 
