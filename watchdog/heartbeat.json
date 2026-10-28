@@ -16,11 +16,11 @@
   "delivery_reserve_utc": null,
   "no_deadline_authorized": true,
   "mathematics_authorized": true,
-  "next_unfinished_action": "FRESH_HOSTILE_AUDIT",
+  "next_unfinished_action": "FRESH_RECONSTRUCTION",
   "status": "running",
   "run_id": "mckay-direct-resume-242588348eeb-g11",
   "lease_generation": 11,
-  "last_heartbeat_utc": "2026-10-28T15:06:19.033Z",
+  "last_heartbeat_utc": "2026-10-28T15:13:37.697Z",
   "mathematics_started": true,
   "recovery_armed": true,
   "recovery_status": "EXISTING_BOUNDED_SUPERVISOR_BINDING_OBSERVED",
@@ -29,17 +29,12 @@
   "dropbox_final_status_verified": true,
   "active_assignments": [
     {
-      "assignment_id": "verification-g11-04",
-      "role": "hostile audit",
-      "state": "running"
-    },
-    {
       "assignment_id": "research-g11-02",
       "role": "research",
       "state": "running"
     }
   ],
-  "phase": "HOSTILE_AUDIT",
+  "phase": "RECONSTRUCTION_PREPARATION",
   "actual_assignment_start_verified": true,
   "execution_stopped": false,
   "current_binding_observed": true,
