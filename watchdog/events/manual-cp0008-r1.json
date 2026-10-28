@@ -1,0 +1,10 @@
+{
+  "campaign_id": "mckay-fine-cofinal-20261027T232057Z",
+  "run_id": "mckay-event-546609b0-d261-11f1-8d52-c47a6ce5db9b",
+  "lease_generation": 4,
+  "incident_id": "manual-cp0008-r1",
+  "recovery_mode": "verify_private_authorization",
+  "reason": "Released generation 4 at verified epoch checkpoint 0008; same-task recovery requested",
+  "snapshot_commit": "188cfd7e9fc96f86f0b075a8c63984b7f8b88bd6",
+  "attempt": 1
+}
