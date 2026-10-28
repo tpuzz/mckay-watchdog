@@ -1,6 +1,6 @@
 # McKay workflow status
 
-_Generated from public watchdog coordination state at 2026-10-28T12:34:22.906823Z._
+_Generated from public watchdog coordination state at 2026-10-28T12:35:28.527205Z._
 
 | Field | Status |
 | --- | --- |
@@ -11,9 +11,9 @@ _Generated from public watchdog coordination state at 2026-10-28T12:34:22.906823
 | Checkpoint | event-checkpoint-g10-03 |
 | Generation | 10 |
 | Lease | Active |
-| Active assignments | 0 |
+| Active assignments | 1 |
 | Recovery | Active takeover |
-| Last heartbeat (UTC) | 2026-10-28T12:34:05.760Z |
+| Last heartbeat (UTC) | 2026-10-28T12:35:10.274Z |
 | Lease expires (UTC) | 2026-10-28T12:43:17.917Z |
 | Terminal delivery complete | No |
 
