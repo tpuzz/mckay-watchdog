@@ -1,19 +1,19 @@
 # McKay workflow status
 
-_Generated from public watchdog coordination state at 2026-10-28T09:23:35.813295Z._
+_Generated from public watchdog coordination state at 2026-10-28T09:23:45.235708Z._
 
 | Field | Status |
 | --- | --- |
 | Campaign | mckay-fine-cofinal-20261027T232057Z |
 | Execution | Active |
-| Current gate | Comparison |
-| Next gate | Comparison |
-| Checkpoint | checkpoint-0017 |
+| Current gate | Final reconciliation / delivery |
+| Next gate | Final reconciliation / delivery |
+| Checkpoint | checkpoint-0018 |
 | Generation | 5 |
 | Lease | Active |
-| Active assignments | 1 |
+| Active assignments | 0 |
 | Recovery | Active takeover |
-| Last heartbeat (UTC) | 2026-10-28T09:23:22.175Z |
+| Last heartbeat (UTC) | 2026-10-28T09:23:39.355Z |
 | Lease expires (UTC) | 2026-10-28T09:35:22.175Z |
 | Terminal delivery complete | No |
 
