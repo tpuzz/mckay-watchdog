@@ -20,7 +20,7 @@
   "status": "running",
   "run_id": "mckay-event-23dd6f50-d2c9-11f1-8bb5-287cf6c18603",
   "lease_generation": 10,
-  "last_heartbeat_utc": "2026-10-28T12:35:10.274Z",
+  "last_heartbeat_utc": "2026-10-28T12:41:27.800Z",
   "mathematics_started": true,
   "recovery_armed": true,
   "recovery_status": "EXISTING_BOUNDED_SUPERVISOR_BINDING_OBSERVED",
