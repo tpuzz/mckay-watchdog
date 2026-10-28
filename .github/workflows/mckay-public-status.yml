@@ -1,0 +1,50 @@
+name: McKay public status
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'watchdog/heartbeat.json'
+      - 'watchdog/owner.json'
+      - 'watchdog/active-campaign.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mckay-public-status
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Test public status renderer
+        run: python -m unittest watchdog.test_public_status -v
+      - name: Render and publish public status
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python watchdog/render_status.py
+            if git diff --quiet -- watchdog/STATUS.md; then
+              echo "Public status is already current."
+              exit 0
+            fi
+            git add watchdog/STATUS.md
+            git commit -m "Update public McKay status"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Concurrent watchdog update detected; retrying from latest main."
+            sleep 2
+          done
+          echo "Could not publish public status after three retries." >&2
+          exit 1
