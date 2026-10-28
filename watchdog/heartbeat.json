@@ -20,7 +20,7 @@
   "status": "running",
   "run_id": "mckay-event-20450d80-d2a1-11f1-807f-bafad5ad3eba",
   "lease_generation": 5,
-  "last_heartbeat_utc": "2026-10-28T07:31:47.798Z",
+  "last_heartbeat_utc": "2026-10-28T07:36:02.032Z",
   "mathematics_started": true,
   "recovery_armed": true,
   "recovery_status": "EVENT_RECOVERY_ACTIVE_SUPERVISOR_EXPIRED",
@@ -30,7 +30,7 @@
   "active_assignments": [
     {
       "assignment_id": "PERSIST-RECONSTRUCTION-g5",
-      "status": "starting",
+      "status": "running",
       "automatic_replacements": 0
     }
   ],
@@ -38,10 +38,10 @@
   "bootstrap_sha256": "acbea4f3ad51ee13c2c5eec0566e0895303b4cd6d2ac161046a94a22add7e0b9",
   "supervisor_run_id": "40602413335",
   "supervisor_rearm_by_utc": "2026-10-28T05:18:54Z",
-  "phase": "BOOTSTRAP_VERIFIED_RECONSTRUCTION_STARTING",
-  "actual_assignment_start_verified": false,
-  "research_start_filename": "mckay-fine-cofinal-20261027T232057Z--RESEARCH_STARTED-g4.json",
-  "research_start_sha256": "8e03253993140b14e1f6c343cf6587dab3c48825465555f70077507ef21e50c9",
+  "phase": "PROOF_BLIND_RECONSTRUCTION_RUNNING",
+  "actual_assignment_start_verified": true,
+  "research_start_filename": "mckay-fine-cofinal-20261027T232057Z--RESEARCH_STARTED-g5.json",
+  "research_start_sha256": "eae0f96f667d76ef8c218069f662698a36670fcacdbf9355cfb2e5ce8a695d15",
   "execution_stopped": false,
   "current_binding_observed": true,
   "execution_lease_released": false,
