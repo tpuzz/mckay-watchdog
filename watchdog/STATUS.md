@@ -1,6 +1,6 @@
 # McKay workflow status
 
-_Generated from public watchdog coordination state at 2026-10-28T09:23:45.235708Z._
+_Generated from public watchdog coordination state at 2026-10-28T09:23:53.970829Z._
 
 | Field | Status |
 | --- | --- |
