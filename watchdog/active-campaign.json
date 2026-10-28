@@ -16,7 +16,16 @@
   "delivery_reserve_utc": null,
   "no_deadline_authorized": true,
   "mathematics_authorized": true,
-  "next_unfinished_action": "FINALIZE_VISIBLE_DELIVERY",
+  "next_unfinished_action": "NONE_COMPLETE",
   "status": "CONFIRMED",
-  "updated_at_utc": "2026-10-28T09:23:34.505Z"
+  "updated_at_utc": "2026-10-28T09:27:21.683Z",
+  "campaign_complete": true,
+  "terminal_delivery_complete": true,
+  "delivery_status": "COMMITTED_TO_CURRENT_RESPONSE",
+  "delivery_run_id": "mckay-event-20450d80-d2a1-11f1-807f-bafad5ad3eba",
+  "resume_authorized": false,
+  "final_receipt_filename": "mckay-fine-cofinal-20261027T232057Z--EVENT_RECOVERY_FINAL-g5.json",
+  "final_receipt_sha256": "0d547cfba3917f0adaa289b9334ababc506469b6bcba79f5dd820a51541722d6",
+  "recovery_result_filename": "mckay-fine-cofinal-20261027T232057Z--FINAL_RESULT-g5.md",
+  "recovery_result_sha256": "8313240cd01deeeb5c6fbf9bbdc532bafca844ff23c4c6ea4b0e9f306091e1ed"
 }
