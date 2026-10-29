@@ -1,6 +1,6 @@
 # McKay workflow status
 
-_Generated from public watchdog coordination state at 2026-10-29T16:53:01.997705Z._
+_Generated from public watchdog coordination state at 2026-10-29T16:55:37.996037Z._
 
 | Field | Status |
 | --- | --- |
@@ -14,7 +14,7 @@ _Generated from public watchdog coordination state at 2026-10-29T16:53:01.997705
 | Active assignments | 1 |
 | Recovery | Not armed |
 | Last heartbeat (UTC) | 2026-10-29T16:52:42.234Z |
-| Lease expires (UTC) | 2026-10-29T17:12:42.234Z |
+| Lease expires (UTC) | 2026-10-29T17:16:00.000Z |
 | Terminal delivery complete | No |
 
 > This page intentionally contains only non-mathematical coordination metadata. It does not publish research prompts, candidate statements, proofs, audits, private paths, source documents, or mathematical results.
