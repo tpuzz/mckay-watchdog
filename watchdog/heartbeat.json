@@ -4,8 +4,8 @@
   "authorization_id": "mckay-theorem38-truth-20261028T100858Z-authorization-v1",
   "run_id": "mckay-direct-resume-20261029T141944Z-g17",
   "lease_generation": 17,
-  "last_heartbeat_utc": "2026-10-29T14:38:01.225Z",
-  "lease_expires_utc": "2026-10-29T15:04:44.268Z",
+  "last_heartbeat_utc": "2026-10-29T14:46:52.903Z",
+  "lease_expires_utc": "2026-10-29T15:46:52.903Z",
   "status": "running",
   "phase": "RESEARCH",
   "active_assignments": [
