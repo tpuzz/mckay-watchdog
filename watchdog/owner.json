@@ -5,11 +5,13 @@
   "owner_run_id": "mckay-backup-recovery-20261029T164723Z-g18",
   "generation": 18,
   "previous_generation": 17,
-  "status": "active",
+  "status": "released",
   "acquired_at_utc": "2026-10-29T16:48:01.089Z",
   "last_renewed_utc": "2026-10-29T16:56:00.000Z",
-  "lease_expires_utc": "2026-10-29T17:16:00.000Z",
-  "recovery_reason": "six_hourly_backup_generation_17_runtime_distress_recovery",
-  "checkpoint_id": "backup-g18-hostile-pass",
-  "checkpoint_sha256": "fc73bb5ad94b2262499118ed24b6660a263c6be608cae25c891f2b4bcf7878a2"
+  "lease_expires_utc": "2026-10-29T17:04:45.000Z",
+  "released_at_utc": "2026-10-29T17:04:45.000Z",
+  "release_reason": "checkpointed_reconstruction_failure_strategy_gate",
+  "checkpoint_id": "backup-g18-reconstruction-fail",
+  "checkpoint_sha256": "32d58f09fab29a99fb93ab06f27631b6b0d8ddaebc0153a0cfe4e6ec2c5d7a91",
+  "next_unfinished_action": "STRATEGY_GATE_AFTER_G18_RECONSTRUCTION_FAIL"
 }
