@@ -2,8 +2,8 @@
   "schema_version": 1,
   "campaign_id": "mckay-theorem38-truth-20261028T100858Z",
   "authorization_id": "mckay-theorem38-truth-20261028T100858Z-authorization-v1",
-  "run_id": "mckay-direct-resume-20261029T175245Z-g19",
-  "generation": 19,
+  "run_id": "mckay-direct-resume-20261029T212401Z-g20",
+  "generation": 20,
   "hard_deadline_utc": null,
   "no_deadline_authorized": true,
   "resume_authorized": true,
@@ -15,13 +15,18 @@
   "checkpoint_library_file_id": "libfile_2c5fa39c254481918ed948f7f89106ae",
   "checkpoint_library_persisted": true,
   "checkpoint_dropbox_persisted": true,
-  "execution_stopped": true,
-  "execution_lease_released": true,
+  "execution_stopped": false,
+  "execution_lease_released": false,
   "recovery_armed": false,
-  "lease_generation": 19,
-  "last_heartbeat_utc": "2026-10-29T19:07:06.824Z",
-  "lease_expires_utc": "2026-10-29T19:02:55.171Z",
-  "status": "stopped",
-  "phase": "CHECKPOINTED_PAUSE",
-  "active_assignments": []
+  "lease_generation": 20,
+  "last_heartbeat_utc": "2026-10-29T21:24:52.139Z",
+  "lease_expires_utc": "2026-10-29T22:29:21.400Z",
+  "status": "running",
+  "phase": "DIRECT_EXECUTION",
+  "active_assignments": [
+    "g20-assignment-01"
+  ],
+  "recovery_status": "DIRECT_EXECUTION",
+  "updated_at_utc": "2026-10-29T21:24:52.139Z",
+  "next_unfinished_action": "PRIVATE_CHECKPOINT_FRONTIER"
 }
