@@ -1,20 +1,20 @@
 # McKay workflow status
 
-_Generated from public watchdog coordination state at 2026-10-29T05:36:42.486243Z._
+_Generated from public watchdog coordination state at 2026-10-29T05:38:17.490925Z._
 
 | Field | Status |
 | --- | --- |
 | Campaign | mckay-theorem38-truth-20261028T100858Z |
-| Execution | Checkpointed |
+| Execution | Active |
 | Current gate | Hostile audit |
 | Next gate | Hostile audit |
 | Checkpoint | backup-bootstrap-g16 |
 | Generation | 16 |
 | Lease | Active |
-| Active assignments | 0 |
+| Active assignments | 2 |
 | Recovery | Armed |
-| Last heartbeat (UTC) | 2026-10-29T05:36:23.748Z |
-| Lease expires (UTC) | 2026-10-29T05:47:33.862Z |
+| Last heartbeat (UTC) | 2026-10-29T05:38:06.503Z |
+| Lease expires (UTC) | 2026-10-29T05:50:06.503Z |
 | Terminal delivery complete | No |
 
 > This page intentionally contains only non-mathematical coordination metadata. It does not publish research prompts, candidate statements, proofs, audits, private paths, source documents, or mathematical results.
