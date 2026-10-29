@@ -9,24 +9,24 @@
   "resume_authorized": true,
   "mathematics_authorized": true,
   "public_metadata_only": true,
-  "checkpoint_id": "RESUME-g19-07",
-  "checkpoint_filename": "mckay-theorem38-truth-20261028T100858Z--RESUME-g19-07.zip",
-  "checkpoint_sha256": "b16af5c7a2385c7c418e6a712ac09c14b167d7ef331b2cfddc7e58eb1d826d8f",
-  "checkpoint_library_file_id": "libfile_2c5fa39c254481918ed948f7f89106ae",
+  "checkpoint_id": "CHECKPOINT-g20-03",
+  "checkpoint_filename": "mckay-theorem38-truth-20261028T100858Z--CHECKPOINT-g20-03.zip",
+  "checkpoint_sha256": "b96f0a57e1f0344ed7fb70fe78b58e07aba7275fdba55cbe847dd41c1778b2f3",
+  "checkpoint_library_file_id": "libfile_95e87ed12a188191b617c5ab1aae1c32",
   "checkpoint_library_persisted": true,
   "checkpoint_dropbox_persisted": true,
   "execution_stopped": false,
   "execution_lease_released": false,
   "recovery_armed": false,
   "status": "CONFIRMED",
-  "updated_at_utc": "2026-10-29T21:24:58.671Z",
+  "updated_at_utc": "2026-10-29T21:52:43.701Z",
   "recovery_status": "DIRECT_EXECUTION",
   "next_unfinished_action": "PRIVATE_CHECKPOINT_FRONTIER",
   "lease_generation": 20,
-  "last_heartbeat_utc": "2026-10-29T21:24:58.671Z",
-  "lease_expires_utc": "2026-10-29T22:29:21.400Z",
+  "last_heartbeat_utc": "2026-10-29T21:52:43.701Z",
+  "lease_expires_utc": "2026-10-29T22:57:43.701Z",
   "phase": "DIRECT_EXECUTION",
   "active_assignments": [
-    "g20-assignment-01"
+    "g20-assignment-03"
   ]
 }
