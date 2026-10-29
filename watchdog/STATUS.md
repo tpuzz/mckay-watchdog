@@ -1,6 +1,6 @@
 # McKay workflow status
 
-_Generated from public watchdog coordination state at 2026-10-29T19:03:25.937599Z._
+_Generated from public watchdog coordination state at 2026-10-29T19:07:15.813381Z._
 
 | Field | Status |
 | --- | --- |
@@ -8,12 +8,12 @@ _Generated from public watchdog coordination state at 2026-10-29T19:03:25.937599
 | Execution | Unknown |
 | Current gate | Checkpoint / epoch boundary |
 | Next gate | Active work |
-| Checkpoint | STOP-g19-06 |
+| Checkpoint | RESUME-g19-07 |
 | Generation | 19 |
 | Lease | Released |
 | Active assignments | 0 |
 | Recovery | Not armed |
-| Last heartbeat (UTC) | 2026-10-29T19:02:55.171Z |
+| Last heartbeat (UTC) | 2026-10-29T19:07:06.824Z |
 | Lease expires (UTC) | 2026-10-29T19:02:55.171Z |
 | Terminal delivery complete | No |
 
