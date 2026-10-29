@@ -5,10 +5,11 @@
   "owner_run_id": "mckay-direct-resume-20261029T175245Z-g19",
   "generation": 19,
   "previous_generation": 18,
-  "status": "active",
+  "status": "released",
   "acquired_at_utc": "2026-10-29T17:53:22.566Z",
   "last_renewed_utc": "2026-10-29T18:40:32.558Z",
-  "lease_expires_utc": "2026-10-29T19:40:32.558Z",
-  "checkpoint_id": "CHECKPOINT-g19-04",
-  "checkpoint_sha256": "bc06fa27fc3196fb49b82a47e4fad383523373bfe2f47c45315f2e3c24fd7057"
+  "lease_expires_utc": "2026-10-29T19:02:55.171Z",
+  "released_at_utc": "2026-10-29T19:02:55.171Z",
+  "checkpoint_id": "STOP-g19-06",
+  "checkpoint_sha256": "e578d967841e77347c438cc050154e3b8c469c52f8021ccacd10d8e692e42ade"
 }
