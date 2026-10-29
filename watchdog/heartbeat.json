@@ -16,11 +16,11 @@
   "delivery_reserve_utc": null,
   "no_deadline_authorized": true,
   "mathematics_authorized": true,
-  "next_unfinished_action": "WAIT_KERNEL_ROOT_LEAKAGE_V1",
+  "next_unfinished_action": "WAIT_KERNEL_ROOT_HOSTILE_V2",
   "status": "running",
   "run_id": "mckay-backup-recovery-20261029T053443Z-g16",
   "lease_generation": 16,
-  "last_heartbeat_utc": "2026-10-29T05:42:47.944Z",
+  "last_heartbeat_utc": "2026-10-29T05:46:07.349Z",
   "mathematics_started": true,
   "recovery_armed": true,
   "recovery_status": "DIRECT_RESUME_RUNNING",
@@ -28,7 +28,7 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "active_assignments": [
-    "KERNEL-ROOT-BRIDGE-LEAK-v1"
+    "KERNEL-ROOT-BRIDGE-HOSTILE-v2"
   ],
   "phase": "KERNEL_ROOT_CANDIDATE_VERIFICATION",
   "actual_assignment_start_verified": true,
@@ -49,7 +49,7 @@
   "launch_intent_sha256": "61edbad12d6d234e5c1a10d58a12118a093cbed93aeeb06bcc4b17c89864a2df",
   "launch_intent_readback_verified": true,
   "ownership_readback_verified": true,
-  "lease_expires_utc": "2026-10-29T05:53:33.843Z",
+  "lease_expires_utc": "2026-10-29T05:58:07.349Z",
   "lease_released": false,
   "lease_release_readback_verified": false,
   "research_start_receipt_filename": "mckay-theorem38-truth-20261028T100858Z--BACKUP-RESEARCH-START-g16.json",
@@ -57,6 +57,7 @@
   "research_start_readback_verified": true,
   "relative_wall_candidate_status": "HOSTILE_FAIL_VERSION_BOUND",
   "relative_wall_hostile_sha256": "82ce8b7a7a8b2a90117ded602cffa8082c7afddbdac664a7cc47f88d1738dc95",
-  "kernel_root_candidate_status": "CANDIDATE_FROZEN",
-  "kernel_root_candidate_sha256": "3fb4b49e58fe737e2d74261950b4207523a165786ad203000000fa3fe9d46ca8"
+  "kernel_root_candidate_status": "LEAKAGE_PASS_V2",
+  "kernel_root_candidate_sha256": "3fb4b49e58fe737e2d74261950b4207523a165786ad203000000fa3fe9d46ca8",
+  "kernel_root_leakage_sha256": "2de52dbe00c83930130e65196d87db5b5a3b551710ff9615e5622852e054a500"
 }
