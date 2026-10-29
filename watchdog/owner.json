@@ -7,7 +7,7 @@
   "previous_generation": 14,
   "status": "active",
   "acquired_at_utc": "2026-10-28T22:34:03.373Z",
-  "last_renewed_utc": "2026-10-29T00:51:59.631Z",
-  "lease_expires_utc": "2026-10-29T01:03:59.631Z",
+  "last_renewed_utc": "2026-10-29T01:01:19.596Z",
+  "lease_expires_utc": "2026-10-29T01:13:19.597Z",
   "recovery_reason": "user_authorized_direct_resume"
 }
