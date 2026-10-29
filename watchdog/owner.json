@@ -5,9 +5,11 @@
   "owner_run_id": "mckay-direct-resume-3f8959ab2974-g15",
   "generation": 15,
   "previous_generation": 14,
-  "status": "active",
+  "status": "released",
   "acquired_at_utc": "2026-10-28T22:34:03.373Z",
   "last_renewed_utc": "2026-10-29T01:21:50.112Z",
-  "lease_expires_utc": "2026-10-29T01:33:50.112Z",
-  "recovery_reason": "user_authorized_direct_resume"
+  "lease_expires_utc": "2026-10-29T01:32:29.257Z",
+  "recovery_reason": "user_authorized_direct_resume",
+  "released_at_utc": "2026-10-29T01:32:29.257Z",
+  "release_reason": "runtime_unavailable"
 }
