@@ -1,6 +1,6 @@
 # McKay workflow status
 
-_Generated from public watchdog coordination state at 2026-10-29T05:52:27.717313Z._
+_Generated from public watchdog coordination state at 2026-10-29T05:52:42.570815Z._
 
 | Field | Status |
 | --- | --- |
@@ -13,7 +13,7 @@ _Generated from public watchdog coordination state at 2026-10-29T05:52:27.717313
 | Lease | Released |
 | Active assignments | 0 |
 | Recovery | Armed |
-| Last heartbeat (UTC) | 2026-10-29T05:52:02.816Z |
+| Last heartbeat (UTC) | 2026-10-29T05:52:31.361Z |
 | Lease expires (UTC) | 2026-10-29T05:52:15.163Z |
 | Terminal delivery complete | No |
 
