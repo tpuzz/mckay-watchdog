@@ -7,8 +7,8 @@
   "previous_generation": 17,
   "status": "active",
   "acquired_at_utc": "2026-10-29T16:48:01.089Z",
-  "last_renewed_utc": "2026-10-29T16:48:01.089Z",
-  "lease_expires_utc": "2026-10-29T17:08:01.089Z",
+  "last_renewed_utc": "2026-10-29T16:52:42.234Z",
+  "lease_expires_utc": "2026-10-29T17:12:42.234Z",
   "recovery_reason": "six_hourly_backup_generation_17_runtime_distress_recovery",
   "checkpoint_id": "resume-g17-05",
   "checkpoint_sha256": "09add25891200ff14a594edcedf24cfa3d7e4e83c2eb7add3c15260799d4f678"
