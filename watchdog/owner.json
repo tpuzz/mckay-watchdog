@@ -10,6 +10,6 @@
   "last_renewed_utc": "2026-10-29T18:40:32.558Z",
   "lease_expires_utc": "2026-10-29T19:02:55.171Z",
   "released_at_utc": "2026-10-29T19:02:55.171Z",
-  "checkpoint_id": "STOP-g19-06",
-  "checkpoint_sha256": "e578d967841e77347c438cc050154e3b8c469c52f8021ccacd10d8e692e42ade"
+  "checkpoint_id": "RESUME-g19-07",
+  "checkpoint_sha256": "b16af5c7a2385c7c418e6a712ac09c14b167d7ef331b2cfddc7e58eb1d826d8f"
 }
