@@ -1,6 +1,6 @@
 # McKay workflow status
 
-_Generated from public watchdog coordination state at 2026-10-29T23:03:33.894182Z._
+_Generated from public watchdog coordination state at 2026-10-29T23:08:15.251035Z._
 
 | Field | Status |
 | --- | --- |
@@ -8,7 +8,7 @@ _Generated from public watchdog coordination state at 2026-10-29T23:03:33.894182
 | Execution | Unknown |
 | Current gate | Checkpoint / epoch boundary |
 | Next gate | Checkpoint / epoch boundary |
-| Checkpoint | CHECKPOINT-g20-09 |
+| Checkpoint | STOP-g20-10 |
 | Generation | 20 |
 | Lease | Released |
 | Active assignments | 0 |
