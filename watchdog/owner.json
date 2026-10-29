@@ -7,8 +7,8 @@
   "previous_generation": 18,
   "status": "active",
   "acquired_at_utc": "2026-10-29T17:53:22.566Z",
-  "last_renewed_utc": "2026-10-29T17:53:22.566Z",
-  "lease_expires_utc": "2026-10-29T18:53:22.567Z",
-  "checkpoint_id": "recovery-bootstrap-g19",
-  "checkpoint_sha256": "0234c0beba41480ac0bb5c22e69070a8b5e647214f08a947fd679d673dac9446"
+  "last_renewed_utc": "2026-10-29T18:40:32.558Z",
+  "lease_expires_utc": "2026-10-29T19:40:32.558Z",
+  "checkpoint_id": "CHECKPOINT-g19-04",
+  "checkpoint_sha256": "bc06fa27fc3196fb49b82a47e4fad383523373bfe2f47c45315f2e3c24fd7057"
 }
