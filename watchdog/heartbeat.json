@@ -9,10 +9,10 @@
   "resume_authorized": true,
   "mathematics_authorized": true,
   "public_metadata_only": true,
-  "checkpoint_id": "CHECKPOINT-g20-09",
-  "checkpoint_filename": "mckay-theorem38-truth-20261028T100858Z--CHECKPOINT-g20-09.zip",
-  "checkpoint_sha256": "5684ea315598772f66fabfa6665187b76b98e650488d647f2b0bb9e7b07e690b",
-  "checkpoint_library_file_id": "libfile_679a34c8f6d081918ebe6e6a0f3e81a1",
+  "checkpoint_id": "STOP-g20-10",
+  "checkpoint_filename": "mckay-theorem38-truth-20261028T100858Z--STOP-g20-10.zip",
+  "checkpoint_sha256": "87fef23485db345926a9bcfbb369ab942eb385c8191fbcb1dce43ef1bc48869b",
+  "checkpoint_library_file_id": "libfile_9710c1c1cc4081918193a4dbaeccd48b",
   "checkpoint_library_persisted": true,
   "checkpoint_dropbox_persisted": true,
   "execution_stopped": true,
@@ -25,6 +25,7 @@
   "phase": "CHECKPOINTED_STOP",
   "active_assignments": [],
   "recovery_status": "STOPPED_RUNTIME_UNAVAILABLE",
-  "updated_at_utc": "2026-10-29T23:03:04.638Z",
-  "next_unfinished_action": "PRIVATE_CHECKPOINT_FRONTIER"
+  "updated_at_utc": "2026-10-29T23:08:03.288Z",
+  "next_unfinished_action": "PRIVATE_CHECKPOINT_FRONTIER",
+  "terminal_report_ready": true
 }
