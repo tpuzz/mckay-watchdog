@@ -1,6 +1,6 @@
 # McKay workflow status
 
-_Generated from public watchdog coordination state at 2026-10-30T18:33:02.106260Z._
+_Generated from public watchdog coordination state at 2026-10-30T18:37:42.597721Z._
 
 | Field | Status |
 | --- | --- |
@@ -8,12 +8,12 @@ _Generated from public watchdog coordination state at 2026-10-30T18:33:02.106260
 | Execution | Active |
 | Current gate | Checkpoint / epoch boundary |
 | Next gate | Checkpoint / epoch boundary |
-| Checkpoint | CHECKPOINT-g23-02 |
+| Checkpoint | CHECKPOINT-g23-03 |
 | Generation | 23 |
 | Lease | Active |
 | Active assignments | 1 |
 | Recovery | Not armed |
-| Last heartbeat (UTC) | 2026-10-30T18:32:47.816Z |
+| Last heartbeat (UTC) | 2026-10-30T18:37:30.364Z |
 | Lease expires (UTC) | 2026-10-30T19:22:23.682Z |
 | Terminal delivery complete | No |
 
