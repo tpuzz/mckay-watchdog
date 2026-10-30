@@ -9,24 +9,24 @@
   "resume_authorized": true,
   "mathematics_authorized": true,
   "public_metadata_only": true,
-  "checkpoint_id": "CHECKPOINT-g23-02",
-  "checkpoint_sha256": "3883bb2ba090cb28096861943b886dea06053093c023f57cba88fb89cf4b1805",
+  "checkpoint_id": "CHECKPOINT-g23-03",
+  "checkpoint_sha256": "eb71b4a46b4c9671544b57b0c396080aa24db76dcae4eed74d574f448ef28728",
   "execution_stopped": false,
   "execution_lease_released": false,
   "recovery_armed": false,
   "status": "running",
   "phase": "SEQUENTIAL_VERIFICATION",
   "active_assignments": [
-    "g23-leakage-v2"
+    "g23-hostile-v2"
   ],
-  "last_heartbeat_utc": "2026-10-30T18:32:47.816Z",
+  "last_heartbeat_utc": "2026-10-30T18:37:30.364Z",
   "next_unfinished_action": "PRIVATE_CHECKPOINT_FRONTIER",
-  "checkpoint_filename": "mckay-theorem38-truth-20261028T100858Z--CHECKPOINT-g23-02.zip",
-  "checkpoint_library_file_id": "libfile_cbe1d8293d5c81919c7dfcdf8f72941e",
+  "checkpoint_filename": "mckay-theorem38-truth-20261028T100858Z--CHECKPOINT-g23-03.zip",
+  "checkpoint_library_file_id": "libfile_a8ff69aa0b1481918d2778fc8dba43d7",
   "checkpoint_library_persisted": true,
   "checkpoint_dropbox_persisted": true,
   "final_delivery_pending": false,
   "unreturned_assignments": 0,
   "terminal_report_ready": false,
-  "updated_at_utc": "2026-10-30T18:32:47.816Z"
+  "updated_at_utc": "2026-10-30T18:37:30.364Z"
 }
