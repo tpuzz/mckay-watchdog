@@ -9,16 +9,14 @@
   "resume_authorized": true,
   "mathematics_authorized": true,
   "public_metadata_only": true,
-  "checkpoint_id": "CHECKPOINT-g22-10",
-  "checkpoint_sha256": "71396c83d541e3d005c157b5e2dcf82056b8ed1fa872f2999b8b94286e764a9e",
-  "execution_stopped": false,
-  "execution_lease_released": false,
+  "checkpoint_id": "CHECKPOINT-g22-11",
+  "checkpoint_sha256": "d0fe39b58bf23acef8650815613f5921bde47a46276909b0ae2c6210a2abcc8f",
+  "execution_stopped": true,
+  "execution_lease_released": true,
   "recovery_armed": false,
-  "status": "running",
-  "phase": "VERIFICATION",
-  "active_assignments": [
-    "g22-closure-comparison"
-  ],
-  "last_heartbeat_utc": "2026-10-30T16:44:45.599Z",
+  "status": "stopped",
+  "phase": "TERMINAL_DELIVERY",
+  "active_assignments": [],
+  "last_heartbeat_utc": "2026-10-30T16:56:04.264Z",
   "next_unfinished_action": "PRIVATE_CHECKPOINT_FRONTIER"
 }
