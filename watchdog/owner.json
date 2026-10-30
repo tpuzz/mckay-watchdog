@@ -7,8 +7,8 @@
   "previous_generation": 20,
   "status": "active",
   "acquired_at_utc": "2026-10-30T13:42:17.068Z",
-  "last_renewed_utc": "2026-10-30T13:42:17.068Z",
-  "lease_expires_utc": "2026-10-30T13:54:17.068Z",
+  "last_renewed_utc": "2026-10-30T13:50:16.081Z",
+  "lease_expires_utc": "2026-10-30T14:02:16.081Z",
   "checkpoint_id": "RECOVERY-BOOTSTRAP-g21",
   "checkpoint_sha256": "7fba34091e42d799f51c6a81afe1583fd40fd559d17be4125c7f75669244cce9"
 }
