@@ -1,6 +1,6 @@
 # McKay workflow status
 
-_Generated from public watchdog coordination state at 2026-10-30T14:07:04.852307Z._
+_Generated from public watchdog coordination state at 2026-10-30T14:08:20.879874Z._
 
 | Field | Status |
 | --- | --- |
@@ -8,12 +8,12 @@ _Generated from public watchdog coordination state at 2026-10-30T14:07:04.852307
 | Execution | Active |
 | Current gate | Checkpoint / epoch boundary |
 | Next gate | Checkpoint / epoch boundary |
-| Checkpoint | RECOVERY-BOOTSTRAP-g21 |
+| Checkpoint | CHECKPOINT-g21-01 |
 | Generation | 21 |
 | Lease | Active |
 | Active assignments | 2 |
 | Recovery | Not armed |
-| Last heartbeat (UTC) | 2026-10-30T13:43:31.362Z |
+| Last heartbeat (UTC) | 2026-10-30T14:08:08.376Z |
 | Lease expires (UTC) | 2026-10-30T14:18:52.939Z |
 | Terminal delivery complete | No |
 
