@@ -16,9 +16,8 @@
   "status": "running",
   "phase": "VERIFICATION_AND_RESEARCH",
   "active_assignments": [
-    "g21-hostile",
-    "g21-closure-test"
+    "g21-reconstruction"
   ],
-  "last_heartbeat_utc": "2026-10-30T14:08:08.376Z",
+  "last_heartbeat_utc": "2026-10-30T14:30:41.365Z",
   "next_unfinished_action": "PRIVATE_CHECKPOINT_FRONTIER"
 }
