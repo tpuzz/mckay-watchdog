@@ -9,16 +9,16 @@
   "resume_authorized": true,
   "mathematics_authorized": true,
   "public_metadata_only": true,
-  "checkpoint_id": "CHECKPOINT-g22-03",
-  "checkpoint_sha256": "89397f881e6a05d2a3b993a7de1d4d2ae2d7a025f401998644462b373992b837",
+  "checkpoint_id": "CHECKPOINT-g22-04",
+  "checkpoint_sha256": "954bace3e9a5b7f5c54c30f752ff2097195847a1d81995a1f3867bd2336e9f1f",
   "execution_stopped": false,
   "execution_lease_released": false,
   "recovery_armed": false,
   "status": "running",
   "phase": "VERIFICATION",
   "active_assignments": [
-    "g22-hostile-v2"
+    "g22-reconstruction-v2"
   ],
-  "last_heartbeat_utc": "2026-10-30T15:36:10.415Z",
+  "last_heartbeat_utc": "2026-10-30T15:48:11.854Z",
   "next_unfinished_action": "PRIVATE_CHECKPOINT_FRONTIER"
 }
