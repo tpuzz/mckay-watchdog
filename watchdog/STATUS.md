@@ -1,19 +1,19 @@
 # McKay workflow status
 
-_Generated from public watchdog coordination state at 2026-10-30T13:42:37.590370Z._
+_Generated from public watchdog coordination state at 2026-10-30T13:43:43.577632Z._
 
 | Field | Status |
 | --- | --- |
 | Campaign | mckay-theorem38-truth-20261028T100858Z |
-| Execution | Unknown |
+| Execution | Active |
 | Current gate | Checkpoint / epoch boundary |
 | Next gate | Checkpoint / epoch boundary |
-| Checkpoint | STOP-g20-10 |
-| Generation | 20 |
+| Checkpoint | RECOVERY-BOOTSTRAP-g21 |
+| Generation | 21 |
 | Lease | Active |
-| Active assignments | 0 |
+| Active assignments | 2 |
 | Recovery | Not armed |
-| Last heartbeat (UTC) | 2026-10-29T23:03:04.638Z |
+| Last heartbeat (UTC) | 2026-10-30T13:43:31.362Z |
 | Lease expires (UTC) | 2026-10-30T13:54:17.068Z |
 | Terminal delivery complete | No |
 
