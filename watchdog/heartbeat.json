@@ -8,17 +8,17 @@
   "no_deadline_authorized": true,
   "mathematics_authorized": true,
   "public_metadata_only": true,
-  "checkpoint_id": "RECOVERY-BOOTSTRAP-g21",
-  "checkpoint_sha256": "7fba34091e42d799f51c6a81afe1583fd40fd559d17be4125c7f75669244cce9",
+  "checkpoint_id": "CHECKPOINT-g21-01",
+  "checkpoint_sha256": "6586a343027768b997c182ce9aca058aa5d21d4c77329123a42966154bc6d4e0",
   "execution_stopped": false,
   "execution_lease_released": false,
   "recovery_armed": false,
   "status": "running",
-  "phase": "RESEARCH_WAVE",
+  "phase": "VERIFICATION_AND_RESEARCH",
   "active_assignments": [
-    "g21-construction",
-    "g21-alternative"
+    "g21-hostile",
+    "g21-closure-test"
   ],
-  "last_heartbeat_utc": "2026-10-30T13:43:31.362Z",
+  "last_heartbeat_utc": "2026-10-30T14:08:08.376Z",
   "next_unfinished_action": "PRIVATE_CHECKPOINT_FRONTIER"
 }
