@@ -1,6 +1,6 @@
 # McKay workflow status
 
-_Generated from public watchdog coordination state at 2026-10-30T16:47:42.747097Z._
+_Generated from public watchdog coordination state at 2026-10-30T16:54:27.072089Z._
 
 | Field | Status |
 | --- | --- |
@@ -10,11 +10,11 @@ _Generated from public watchdog coordination state at 2026-10-30T16:47:42.747097
 | Next gate | Checkpoint / epoch boundary |
 | Checkpoint | CHECKPOINT-g22-10 |
 | Generation | 22 |
-| Lease | Active |
+| Lease | Released |
 | Active assignments | 1 |
 | Recovery | Not armed |
 | Last heartbeat (UTC) | 2026-10-30T16:44:45.599Z |
-| Lease expires (UTC) | 2026-10-30T16:59:45.599Z |
+| Lease expires (UTC) | 2026-10-30T16:54:14.543Z |
 | Terminal delivery complete | No |
 
 > This page intentionally contains only non-mathematical coordination metadata. It does not publish research prompts, candidate statements, proofs, audits, private paths, source documents, or mathematical results.
