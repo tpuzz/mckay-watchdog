@@ -5,10 +5,12 @@
   "owner_run_id": "mckay-ultra-return-20261030T152224Z-g22",
   "generation": 22,
   "previous_generation": 21,
-  "status": "active",
+  "status": "released",
   "acquired_at_utc": "2026-10-30T15:22:24.587Z",
   "last_renewed_utc": "2026-10-30T16:44:45.599Z",
-  "lease_expires_utc": "2026-10-30T16:59:45.599Z",
-  "checkpoint_id": "CHECKPOINT-g22-10",
-  "checkpoint_sha256": "71396c83d541e3d005c157b5e2dcf82056b8ed1fa872f2999b8b94286e764a9e"
+  "lease_expires_utc": "2026-10-30T16:54:14.543Z",
+  "checkpoint_id": "CHECKPOINT-g22-11",
+  "checkpoint_sha256": "d0fe39b58bf23acef8650815613f5921bde47a46276909b0ae2c6210a2abcc8f",
+  "released_at_utc": "2026-10-30T16:54:14.543Z",
+  "release_reason": "Completed current verification wave; no active assignments; durable checkpoint 11"
 }
