@@ -5,12 +5,14 @@
   "owner_run_id": "mckay-direct-resume-20261030T134151Z-g21",
   "generation": 21,
   "previous_generation": 20,
-  "status": "active",
+  "status": "released",
   "acquired_at_utc": "2026-10-30T13:42:17.068Z",
   "last_renewed_utc": "2026-10-30T14:47:23.766Z",
-  "lease_expires_utc": "2026-10-30T15:02:23.766Z",
-  "checkpoint_id": "CHECKPOINT-g21-05",
-  "checkpoint_sha256": "fe749303aba347dfef31be4ca27bfba04481ecc51b6c0600296616fab94e906b",
+  "lease_expires_utc": "2026-10-30T14:51:12.737Z",
+  "checkpoint_id": "CHECKPOINT-g21-06",
+  "checkpoint_sha256": "e454c94480b0dc0399b7dc4f7050dc25cbb8a3e4627e8629fd5b380b322988f8",
   "lease_gap_reconciled_at_utc": "2026-10-30T14:06:52.939Z",
-  "prior_lease_expired_utc": "2026-10-30T14:02:16.081Z"
+  "prior_lease_expired_utc": "2026-10-30T14:02:16.081Z",
+  "released_at_utc": "2026-10-30T14:51:12.737Z",
+  "release_reason": "STRATEGIC_STOP_TERMINAL_DELIVERY"
 }
