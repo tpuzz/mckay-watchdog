@@ -5,10 +5,12 @@
   "owner_run_id": "mckay-rank3-colimit-20261030T181723Z-g23",
   "generation": 23,
   "previous_generation": 22,
-  "status": "active",
+  "status": "released",
   "acquired_at_utc": "2026-10-30T18:17:23.682Z",
   "last_renewed_utc": "2026-10-30T18:17:23.682Z",
-  "lease_expires_utc": "2026-10-30T19:22:23.682Z",
-  "checkpoint_id": "CHECKPOINT-g22-11",
-  "checkpoint_sha256": "d0fe39b58bf23acef8650815613f5921bde47a46276909b0ae2c6210a2abcc8f"
+  "lease_expires_utc": "2026-10-30T19:00:28.206Z",
+  "checkpoint_id": "CHECKPOINT-g23-06",
+  "checkpoint_sha256": "3078d8b0333a599ce4f5b51e3098e6b2e458882a3a92dd1ffea3a3af7636cafd",
+  "released_at_utc": "2026-10-30T19:00:28.206Z",
+  "release_reason": "Completed authorized directive and sequential verification; final delivery packaging"
 }
