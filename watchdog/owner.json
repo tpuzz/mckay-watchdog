@@ -7,10 +7,10 @@
   "previous_generation": 20,
   "status": "active",
   "acquired_at_utc": "2026-10-30T13:42:17.068Z",
-  "last_renewed_utc": "2026-10-30T14:35:55.895Z",
-  "lease_expires_utc": "2026-10-30T14:47:55.895Z",
-  "checkpoint_id": "CHECKPOINT-g21-04",
-  "checkpoint_sha256": "12386a77b200ba59155563e2651d4baea55bc39a6b070d7a950d183f0f94ebc6",
+  "last_renewed_utc": "2026-10-30T14:47:23.766Z",
+  "lease_expires_utc": "2026-10-30T15:02:23.766Z",
+  "checkpoint_id": "CHECKPOINT-g21-05",
+  "checkpoint_sha256": "fe749303aba347dfef31be4ca27bfba04481ecc51b6c0600296616fab94e906b",
   "lease_gap_reconciled_at_utc": "2026-10-30T14:06:52.939Z",
   "prior_lease_expired_utc": "2026-10-30T14:02:16.081Z"
 }
