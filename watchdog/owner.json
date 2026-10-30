@@ -9,8 +9,8 @@
   "acquired_at_utc": "2026-10-30T18:17:23.682Z",
   "last_renewed_utc": "2026-10-30T18:17:23.682Z",
   "lease_expires_utc": "2026-10-30T19:00:28.206Z",
-  "checkpoint_id": "CHECKPOINT-g23-06",
-  "checkpoint_sha256": "3078d8b0333a599ce4f5b51e3098e6b2e458882a3a92dd1ffea3a3af7636cafd",
+  "checkpoint_id": "STOP-g23-07",
+  "checkpoint_sha256": "f7427456ac30138e7641a13a3a2d7f9c29d7d4abc610b86442291c5213a86d34",
   "released_at_utc": "2026-10-30T19:00:28.206Z",
   "release_reason": "Completed authorized directive and sequential verification; final delivery packaging"
 }
