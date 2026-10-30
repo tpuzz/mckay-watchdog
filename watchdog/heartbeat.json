@@ -15,8 +15,18 @@
   "execution_lease_released": true,
   "recovery_armed": false,
   "status": "stopped",
-  "phase": "TERMINAL_DELIVERY",
+  "phase": "FINAL_DELIVERY_INTERRUPTED",
   "active_assignments": [],
-  "last_heartbeat_utc": "2026-10-30T16:56:04.264Z",
-  "next_unfinished_action": "PRIVATE_CHECKPOINT_FRONTIER"
+  "last_heartbeat_utc": "2026-10-30T16:59:22.179Z",
+  "next_unfinished_action": "PRIVATE_CHECKPOINT_FRONTIER",
+  "checkpoint_filename": "mckay-theorem38-truth-20261028T100858Z--CHECKPOINT-g22-11.zip",
+  "checkpoint_library_file_id": "libfile_f40cf8243ee08191b91f7166f5eb816e",
+  "checkpoint_library_persisted": true,
+  "checkpoint_dropbox_persisted": true,
+  "final_delivery_pending": true,
+  "final_delivery_pending_marker": "watchdog/g22-terminal/FINAL_DELIVERY_PENDING.md",
+  "runtime_failure": "exec-server transport closed; environment unavailable during terminal packaging",
+  "unreturned_assignments": 0,
+  "terminal_report_ready": false,
+  "updated_at_utc": "2026-10-30T16:59:22.179Z"
 }
