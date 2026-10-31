@@ -1,0 +1,10 @@
+{
+  "campaign_id": "mckay-theorem38-truth-20261028T100858Z",
+  "run_id": "mckay-theorem38-root-20261028T111232Z",
+  "lease_generation": 7,
+  "incident_id": "ee03b2e9e8066490a055eeea",
+  "recovery_mode": "verify_private_authorization",
+  "reason": "Expired lease and stale or interrupted execution",
+  "snapshot_commit": "92c1c8e6c8e2ea32a0737512556b9e6ec547d09c",
+  "attempt": 1
+}
